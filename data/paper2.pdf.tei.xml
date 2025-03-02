@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coords="1,58.98,91.02,478.92,12.90;1,247.63,108.96,101.63,12.90">Transformer Dynamics: A neuroscientific approach to interpretability of large language models</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-02-17">17 Feb 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,207.77,162.70,75.56,8.96"><forename type="first">Jesseba</forename><surname>Fernando</surname></persName>
+							<email>fernando.je@northeastern.edu</email>
+							<affiliation key="aff0" coords="1,208.89,178.69,183.58,7.77">
+								<note type="raw_affiliation"><label>1</label> Network Science Institute , Northeastern University</note>
+								<orgName type="department">Network Science Institute</orgName>
+								<orgName type="institution">Northeastern University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,295.12,162.70,87.18,8.96"><forename type="first">Grigori</forename><surname>Guitchounts</surname></persName>
+							<email>g.guitchounts@alumni.harvard.edu</email>
+							<affiliation key="aff1" coords="1,278.26,188.65,44.32,7.77">
+								<note type="raw_affiliation"><label>2</label> Independent</note>
+								<orgName type="department">Independent</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coords="1,58.98,91.02,478.92,12.90;1,247.63,108.96,101.63,12.90">Transformer Dynamics: A neuroscientific approach to interpretability of large language models</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-02-17">17 Feb 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">403B9D3E1AF53BFA02458E1B371C5F6F</idno>
+					<idno type="arXiv">arXiv:2502.12131v1[cs.AI]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1" ident="GROBID" when="2025-02-18T10:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p><s coords="1,75.01,268.25,194.51,8.64;1,75.37,280.21,195.81,8.64;1,75.37,292.16,195.89,8.64">As artificial intelligence models have exploded in scale and capability, understanding of their internal mechanisms remains a critical challenge.</s><s coords="1,75.37,304.12,194.15,8.64;1,75.37,316.07,194.15,8.64;1,75.37,328.03,194.15,8.64;1,75.37,339.98,91.61,8.64">Inspired by the success of dynamical systems approaches in neuroscience, here we propose a novel framework for studying computations in deep learning systems.</s><s coords="1,170.08,339.98,99.44,8.64;1,75.37,351.94,195.80,8.64;1,75.37,363.89,194.15,8.64;1,75.37,375.85,26.75,8.64">We focus on the residual stream (RS) in transformer models, conceptualizing it as a dynamical system evolving across layers.</s><s coords="1,105.20,375.85,164.31,8.64;1,75.37,387.80,195.80,8.64;1,75.37,399.76,174.45,8.64">We find that activations of individual RS units exhibit strong continuity across layers, despite the RS being a non-privileged basis.</s><s coords="1,255.93,399.76,15.23,8.64;1,75.37,411.72,194.31,8.64;1,75.37,423.67,194.15,8.64;1,75.37,435.63,62.00,8.64">Activations in the RS accelerate and grow denser over layers, while individual units trace unstable periodic orbits.</s><s coords="1,142.00,435.63,128.76,8.64;1,75.37,447.58,195.80,8.64;1,75.37,459.54,133.89,8.64">In reduced-dimensional spaces, the RS follows a curved trajectory with attractorlike dynamics in the lower layers.</s><s coords="1,212.34,459.54,57.18,8.64;1,75.37,471.49,195.80,8.64;1,75.37,483.45,194.31,8.64;1,75.37,495.40,194.15,8.64;1,75.37,507.36,194.32,8.64;1,75.37,519.31,168.95,8.64">These insights bridge dynamical systems theory and mechanistic interpretability, establishing a foundation for a "neuroscience of AI" that combines theoretical rigor with large-scale data analysis to advance our understanding of modern neural networks.</s></p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." coords="1,55.44,555.93,76.84,10.75">Introduction</head><p><s coords="1,55.08,577.07,234.36,8.64;1,55.44,589.02,234.35,8.64;1,55.44,600.98,173.25,8.64">Artificial intelligence models-particularly modern deep learning systems-have scaled in both size and capability at an astonishing rate <ref type="bibr" coords="1,146.94,600.98,73.00,8.64" target="#b1">(Bahri et al., 2024</ref>).</s><s coords="1,234.09,600.98,55.35,8.64;1,55.44,612.93,235.65,8.64;1,55.44,624.89,64.76,8.64">Today's large language models (LLMs), vision models, and other predictive models (e.g.</s><s coords="1,123.28,624.89,167.41,8.64;1,55.44,636.84,196.99,8.64">recommender systems, weather prediction, navigation, etc) are operating in the real world.</s><s coords="1,258.26,636.84,32.83,8.64;1,55.44,648.80,234.00,8.64;1,55.44,660.75,234.00,8.64;1,55.44,672.71,234.00,8.64;1,55.44,684.66,234.00,8.64;1,55.08,696.62,79.16,8.64">Yet, despite their ubiquity, we lack a comprehensive understanding of how these models work, where understanding is meant roughly as to be able to predict how a particular change to the input or to the model would affect its output in a wide range of cases.</s><s coords="1,137.32,696.62,152.12,8.64;1,55.44,708.58,235.25,8.64;1,307.44,249.14,234.35,8.64;1,307.11,261.10,168.80,8.64">Our lack of understanding around such systems raises myriad concerns about their safety, fairness, and whether they might pose an existential risk to humanity <ref type="bibr" coords="1,307.11,261.10,84.95,8.64" target="#b0">(Amodei et al., 2016;</ref><ref type="bibr" coords="1,394.55,261.10,77.07,8.64" target="#b3">Bengio et al., 2024)</ref>.</s></p><p><s coords="1,307.44,279.03,234.00,8.64;1,307.44,290.98,234.35,8.64;1,307.44,302.94,64.93,8.64">Like the brain, deep neural networks are complex systems composed of billions of parameters interacting in highly non-linear ways.</s><s coords="1,375.41,302.94,166.03,8.64;1,307.44,314.89,234.00,8.64;1,307.44,326.85,234.00,8.64;1,307.11,338.81,61.53,8.64">Systems with even a small number of such interacting elements can give rise to emergent behaviors that are unpredictable from a strictly bottom-up perspective <ref type="bibr" coords="1,307.11,338.81,57.29,8.64" target="#b11">(Lorenz, 1963)</ref>.</s><s coords="1,371.73,338.81,171.36,8.64;1,307.44,350.76,234.00,8.64;1,307.44,362.72,157.65,8.64">Consequently, it is not surprising that existing methods for investigating the workings of these models have yielded only fragmentary insights.</s></p><p><s coords="1,307.44,380.65,235.65,8.64;1,307.44,392.60,234.00,8.64;1,307.44,404.56,235.65,8.64;1,307.44,416.51,234.83,8.64;1,307.44,428.47,77.97,8.64">Current approaches in mechanistic interpretability often focus on identifying discrete circuits within neural networks-sub-networks or groups of neurons that implement particular functions <ref type="bibr" coords="1,414.27,416.51,128.00,8.64" target="#b6">(Heimersheim &amp; Nanda, 2024;</ref><ref type="bibr" coords="1,307.44,428.47,73.60,8.64" target="#b17">Singh et al., 2024)</ref>.</s><s coords="1,389.27,428.47,152.16,8.64;1,307.44,440.42,235.65,8.64;1,307.44,452.38,235.74,8.64">While these circuit-based approaches have provided some explanatory power, they tend to mirror pitfalls of early approaches to understanding the brain.</s><s coords="1,307.44,464.33,234.00,8.64;1,306.12,476.29,236.97,8.64;1,307.44,488.24,235.65,8.64;1,307.44,500.20,234.00,8.64;1,307.44,512.16,235.25,8.64;1,307.44,524.11,26.25,8.64">One historical example in neuroscience was the concept of "grandmother cells," which posited that the unit of representation in the brain may be individual neurons that encode highly specific concepts (like a single neuron firing selectively for one's grandmother) <ref type="bibr" coords="1,453.03,512.16,89.66,8.64;1,307.44,524.11,21.87,8.64" target="#b15">(Plaut &amp; McClelland, 2010)</ref>.</s><s coords="1,341.09,524.11,202.01,8.64;1,307.44,536.07,234.35,8.64;1,307.44,548.02,234.00,8.64;1,307.44,559.98,234.00,8.64;1,307.08,571.93,234.36,8.64;1,307.44,583.89,215.06,8.64">This idea, together with sparse coding-the notion that only a small fraction of neurons are active at any one time, and that representations are distributed among populations of cells <ref type="bibr" coords="1,390.85,559.98,106.53,8.64" target="#b14">(Olshausen &amp; Field, 2004</ref>)-led to a wave of work around sparse distributed representations as a way to explain how the brain encodes information.</s><s coords="1,526.47,583.89,16.22,8.64;1,307.08,595.84,234.36,8.64;1,307.44,607.80,235.65,8.64;1,307.44,619.75,234.00,8.64;1,307.44,631.71,234.00,8.64;1,307.44,643.66,199.51,8.64">Yet, while artificially sparsifying model activations with sparse autoencoders (SAEs) has yielded model-specific information about which sets of activations represent monosemantic concepts, many questions about how the models compute remain unanswered <ref type="bibr" coords="1,387.67,643.66,114.99,8.64" target="#b19">(Wattenberg &amp; Viégas, 2024)</ref>.</s></p><p><s coords="1,307.44,661.59,234.00,8.64;1,307.44,673.55,235.65,8.64;1,307.44,685.50,234.00,8.64;1,307.44,697.46,52.34,8.64">In neuroscience, a recent promising approach to interpret neural encoding of information comes from dynamical systems <ref type="bibr" coords="1,328.65,685.50,82.26,8.64" target="#b16">(Shenoy et al., 2013;</ref><ref type="bibr" coords="1,413.40,685.50,105.19,8.64" target="#b2">Barack &amp; Krakauer, 2021;</ref><ref type="bibr" coords="1,521.07,685.50,20.37,8.64;1,307.44,697.46,47.97,8.64" target="#b18">Vyas et al., 2020)</ref>.</s><s coords="1,364.92,697.46,178.18,8.64;2,55.44,399.03,234.00,8.64;2,55.44,410.98,234.35,8.64;2,55.44,422.94,235.65,8.64;2,55.44,434.90,27.75,8.64">Treating the activity of populations of neu- rons as a time-evolving dynamical system has shed light on how such populations collectively implement sensory perception, compute cognitive variables, and produce behavior.</s><s coords="2,89.81,434.90,199.63,8.64;2,55.44,446.85,235.65,8.64;2,55.44,458.81,234.00,8.64;2,55.44,470.76,234.00,8.64;2,55.44,482.72,119.64,8.64">Instead of aiming to explain the representations of single neurons-or even snapshots in time of the activities of populations-these dynamical approaches aim to understand how network-wide activity evolves over time to generate complex outputs.</s><s coords="2,180.68,482.72,108.93,8.64;2,55.44,494.67,234.00,8.64;2,55.44,506.63,234.00,8.64;2,55.44,518.58,234.00,8.64;2,55.44,530.54,50.82,8.64">For example, in the motor system, preparatory activity appears to guide the population to an appropriate pre-movement state; and in some cases these states are attractors that are robust to noise <ref type="bibr" coords="2,255.63,518.58,33.81,8.64;2,55.44,530.54,46.46,8.64" target="#b8">(Inagaki et al., 2019)</ref>.</s><s coords="2,109.35,530.54,180.09,8.64;2,55.44,542.49,234.00,8.64;2,55.11,554.45,128.27,8.64">Dynamical approaches have yielded insights into the computations in recurrent artificial networks as well <ref type="bibr" coords="2,55.11,554.45,123.98,8.64" target="#b13">(Maheswaranathan et al., 2019)</ref>.</s></p><p><s coords="2,54.97,572.38,236.12,8.64;2,55.44,584.33,234.17,8.64;2,55.44,596.29,235.65,8.64;2,55.44,608.25,234.00,8.64;2,55.05,620.20,178.42,8.64">While transformers do not have inherent time-evolving dynamics like recurrent networks, some have examined their activations and treated them as dynamically-evolving systems <ref type="bibr" coords="2,78.08,608.25,104.36,8.64">(Geshkovski et al., 2024;</ref><ref type="bibr" coords="2,185.90,608.25,64.53,8.64" target="#b12">Lu et al., 2019;</ref><ref type="bibr" coords="2,253.87,608.25,35.57,8.64;2,55.05,620.20,84.77,8.64" target="#b7">Hosseini &amp; Fedorenko, 2023;</ref><ref type="bibr" coords="2,143.72,620.20,85.37,8.64">Lawson et al., 2024)</ref>.</s><s coords="2,240.81,620.20,49.87,8.64;2,55.44,632.16,234.00,8.64;2,55.44,644.11,234.00,8.64;2,55.44,656.07,180.92,8.64">Specifically, the residual stream, which is updated linearly after each layer's attention and MLP operations, can be considered as a dynamic system that evolves over the layers.</s><s coords="2,239.44,656.07,51.66,8.64;2,55.44,668.02,234.00,8.64;2,55.44,679.98,234.00,8.64;2,55.44,691.93,105.02,8.64">Lu et al. proposed that the transformer residual stream be considered as an ordinary differential equation (ODE) of multiple particles moving through space (i.e.</s><s coords="2,163.58,691.93,126.21,8.64;2,55.44,703.89,234.00,8.64;2,307.44,399.03,234.00,8.64;2,307.44,410.98,234.00,8.64;2,307.44,422.94,114.56,8.64">across layers) and influenced by convection (external forces) and diffusion (internal forces among particles); their main contribution was proposing the Strang-Marchuk splitting scheme to replace Euler's method in approximating the ODE.</s><s coords="2,425.85,422.94,115.95,8.64;2,307.44,434.90,234.00,8.64;2,307.44,446.85,149.96,8.64">Geshkovski et al. similarly treat the transformer as interacting particle systems, with dynamically-interacting particles (i.e.</s><s coords="2,460.48,446.85,80.96,8.64;2,307.44,458.81,194.00,8.64">tokens) described as flows of probability measures on the unit sphere.</s></p><p><s coords="2,307.13,476.74,234.31,8.64;2,307.44,488.69,234.00,8.64;2,307.44,500.65,234.00,8.64;2,307.44,512.60,235.65,8.64;2,307.44,524.56,74.59,8.64">This work aims to re-envision the study of mechanistic interpretability (MechInterp) through the lens of dynamical systems, inspired by this approach's success in neuroscience and driven by that field's integration of theory and largescale data analysis.</s><s coords="2,385.11,524.56,156.69,8.64;2,307.44,536.51,196.09,8.64">As such, we would like to term this new subset of MechInterp "the neuroscience of AI".</s><s coords="2,508.46,536.51,33.33,8.64;2,307.44,548.47,112.73,8.64">Our key contributions are as follows:</s></p><p><s coords="2,314.91,574.16,226.53,8.64;2,327.37,586.11,215.73,8.64;2,327.12,598.07,214.32,8.64;2,327.37,610.02,96.45,8.64">1. We demonstrate that individual units in the residual stream maintain strong correlations across layers, revealing an unexpected continuity despite the RS not being a privileged basis.</s></p><p><s coords="2,314.91,629.41,227.77,8.64;2,327.37,641.37,214.07,8.64;2,327.37,653.32,214.07,8.64;2,327.37,665.28,26.28,8.64">2. We characterize the evolution of the residual stream, showing that it systematically accelerates and grows denser as information progresses through the network's layers.</s></p><p><s coords="2,314.91,684.66,226.53,8.64;2,327.37,696.62,215.73,8.64;2,327.37,708.58,199.71,8.64">3. We identify a sharp decrease in mutual information during early layers, suggesting a fundamental transformation in how the network processes information.</s></p><p><s coords="3,62.91,70.54,226.53,8.64;3,75.37,82.49,215.73,8.64;3,75.37,94.45,180.29,8.64">4. We discover that individual residual stream units trace unstable periodic orbits in phase space, indicating structured computational patterns at the unit level.</s></p><p><s coords="3,62.91,113.43,226.53,8.64;3,75.37,125.39,214.07,8.64;3,75.37,137.34,214.07,8.64;3,75.37,149.30,51.21,8.64">5. We show that representations in the residual stream follow self-correcting curved trajectories in reduced dimensional space, with attractor-like dynamics in the lower layers.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." coords="3,55.44,174.30,56.45,10.75">Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1." coords="3,55.44,195.05,37.91,8.96">Data</head><p><s coords="3,55.44,214.09,234.00,8.64;3,55.44,225.73,234.00,8.96;3,55.44,238.00,45.94,8.64">Given a corpus of text sequences from WikiText-2, we first filter the dataset D to include only sequences s with length constraints:</s></p><formula xml:id="formula_0" coords="3,97.01,257.24,150.87,9.81">D filtered = {s ∈ D | l min &lt; |s| &lt; l max }</formula><p><s coords="3,55.08,276.80,191.85,9.81">where l min = 100 and l max = 500 characters.</s><s coords="3,253.28,277.12,36.16,8.64;3,55.44,288.76,202.40,8.96">For each sequence s, we obtain its tokenized representation:</s></p><formula xml:id="formula_1" coords="3,106.96,308.29,130.96,9.68">x = [t 0 , t 1 , ..., t n ] = tokenize(s)</formula><p><s coords="3,55.08,327.88,203.57,9.65">where t 0 is the beginning-of-sequence (BOS) token.</s><s coords="3,261.71,328.20,27.74,8.64;3,55.44,339.80,206.88,8.99;3,262.32,338.26,2.30,6.12;3,267.61,340.15,21.83,8.64;3,55.44,352.11,105.88,8.64">For the shuffled condition, we create a permuted sequence x ′ while preserving the BOS token:</s></p><formula xml:id="formula_2" coords="3,112.29,369.28,120.30,12.03">x ′ = [t 0 , t π(1) , t π(2) , ..., t π(n) ]</formula><p><s coords="3,55.08,390.91,217.05,8.96">where π is a random permutation of indices {1, ..., n}.</s></p><p><s coords="3,55.44,409.16,235.65,8.64;3,55.44,420.80,234.00,8.96;3,55.44,432.75,174.99,8.96;3,230.43,431.18,16.94,6.12;3,230.43,437.62,2.52,6.12">For each sequence (original and shuffled), we collect activations at two key points in each transformer layer l ∈ {1, ..., L}: Pre-attention normalization (h Attn l</s></p><p><s coords="3,247.87,433.07,43.23,8.64;3,55.44,445.03,90.49,8.64;3,145.93,443.13,18.88,6.12;3,145.93,449.57,2.52,6.12;3,166.38,445.03,5.81,8.64">) and Pre-MLP normalization (h M LP l ).</s></p><p><s coords="3,55.13,462.64,235.55,8.96;3,55.08,474.57,26.59,8.99;3,81.67,473.02,16.94,6.12;3,81.67,479.46,2.52,6.12;3,101.59,474.57,23.26,8.99;3,124.85,473.02,18.88,6.12;3,124.85,479.46,2.52,6.12;3,147.80,474.60,141.64,8.96;3,53.79,486.87,32.92,8.64">These constitute the activations of the residual stream, RS, with h Attn l and h M LP l interleaved to make up 2L effective 'layers'.</s></p><p><s coords="3,54.97,504.80,234.63,8.64;3,55.44,516.76,104.49,8.64">We focused on the representation at the last token only, for each activation extracting:</s></p><formula xml:id="formula_3" coords="3,148.14,533.93,47.89,11.72">h l ∈ R B×D</formula><p><s coords="3,55.08,555.56,226.32,8.96">where B is the batch size and D is the model dimension.</s></p><p><s coords="3,55.08,573.81,210.46,8.64">Altogether the extracted activations corresponded to:</s></p><formula xml:id="formula_4" coords="3,137.41,590.98,69.36,11.37">RS ∈ R B×2L×D</formula><p><s coords="3,55.44,618.91,234.00,8.64;3,55.44,630.55,126.74,8.96">For experiments in this paper, we used Llama 3.1 8B, where L = 32 and D = 4096 (Fig1A).</s></p><p><s coords="3,55.44,648.80,234.00,8.64;3,55.44,660.44,235.65,8.96;3,55.44,672.71,234.00,8.64;3,55.44,684.66,235.74,8.64">Since activations in the RS do not correspond to individual artificial neurons, we term each dimension in D a 'unit,' borrowing terminology from neuroscience to indicate the recording of the activation of a single element in the stream.</s><s coords="3,54.97,696.62,234.82,8.64;3,55.44,708.58,89.34,8.64">We will thus refer to the dynamics of units in the RS as they unfold over the layers.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2." coords="3,307.44,70.15,195.10,8.96">Transformer Residual Stream Activations</head><p><s coords="3,307.44,89.19,234.00,8.64;3,307.44,101.15,141.42,8.64">Mean activations across batches for each unit and layer were calculated in the following manner:</s></p><formula xml:id="formula_5" coords="3,390.85,120.91,67.38,30.55">hu l = 1 B B b=1 h i,b l</formula><p><s coords="3,307.44,167.21,234.00,8.96;3,307.44,179.49,155.83,8.64">Mean activations across N = 1000 data batches were sorted by the mean activation at the last layer:</s></p><formula xml:id="formula_6" coords="3,389.01,197.62,70.86,11.59">π = argsort( h2L )</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3." coords="3,307.44,227.24,232.02,8.96;3,324.88,239.20,30.80,8.96">Correlations and Cosine Similarity in the Residual Stream</head><p><s coords="3,307.44,257.92,235.65,8.96;3,307.44,270.19,234.00,8.64;3,307.44,282.15,34.87,8.64">For each unit u, we computed the Pearson correlation coefficient between its activations at different layers across all samples:</s></p><formula xml:id="formula_7" coords="3,377.52,291.64,92.65,27.22">r u l,l+1 = cov(h i l , h i l+1 ) σh i l σh i l+1</formula><p><s coords="3,307.08,326.44,32.88,8.99;3,339.96,324.89,2.52,6.12;3,339.96,331.72,7.33,6.12;3,350.56,326.47,16.60,9.30;3,367.16,324.89,6.02,6.12;3,376.51,326.47,165.10,8.96;3,307.44,338.42,80.09,8.96">where h l [i] ∈ R B represents the activations of unit i at layer l across all samples.</s></p><p><s coords="3,307.44,356.67,234.00,8.64;3,307.44,368.63,84.38,8.64">For each unit, we analyzed the distribution of correlations across all layer pairs:</s></p><formula xml:id="formula_8" coords="3,344.60,387.32,159.69,12.69">C i = {r i l,m : l, m ∈ {1, ..., 2L}, l &lt; m}</formula><p><s coords="3,307.13,410.47,234.31,8.96;3,307.44,422.75,49.26,8.64">The distribution was binned into intervals [0, 1] to create a density plot.</s></p><p><s coords="3,307.44,440.68,234.00,8.64;3,307.44,452.64,11.07,8.64">Cosine similarity between consecutive layers was computed as:</s></p><formula xml:id="formula_9" coords="3,384.55,460.32,78.58,23.25">CS l = h l • h l+1 ∥h l ∥∥h l+1 ∥</formula><p><s coords="3,307.44,495.98,235.65,8.64;3,307.44,507.93,234.00,8.64;3,307.44,519.89,234.00,8.64;3,307.44,531.84,54.01,8.64;3,361.45,529.95,16.94,6.12;3,361.45,536.38,2.52,6.12;3,381.65,531.49,19.10,8.77;3,400.74,529.95,18.88,6.12;3,400.74,536.38,2.52,6.12;3,421.20,531.84,120.24,8.64;3,307.44,543.80,104.31,8.64;3,411.75,541.90,18.88,6.12;3,411.75,548.34,2.52,6.12;3,434.97,543.45,19.10,8.77;3,454.06,541.90,16.94,6.12;3,454.06,548.34,12.65,6.12;3,471.50,543.80,5.81,8.64">For this and other analyses, we treated the interleaved preattention and pre-MLP activations as layers, highlighting the two transition types: pre-attention to pre-MLP within the same layer (h Attn l → h M LP l ) and pre-MLP to pre-attention of the subsequent layer (h M LP l → h Attn l+1 ).</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4." coords="3,307.44,568.54,51.30,8.96">Velocity</head><p><s coords="3,307.13,587.58,234.31,8.64;3,307.44,599.54,234.00,8.64;3,307.44,611.49,235.66,8.64;3,307.44,623.45,18.27,8.64">To understand how the dynamics of the residual stream change over the layers, for each layer, we calculated the magnitude of the velocity of the residual stream representation:</s></p><formula xml:id="formula_10" coords="3,380.61,635.05,87.16,9.68">∥V l ∥ = ∥h l+1 -h l ∥ 2</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5." coords="3,307.44,665.62,103.25,8.96">Mutual Information</head><p><s coords="3,307.13,684.66,234.31,8.64;3,307.44,696.62,234.00,8.64;3,307.44,708.58,159.01,8.64">To understand how information is processed through the layers, we analyzed the mutual information (MI) of units between layers in the residual stream.</s><s coords="3,473.33,708.58,68.10,8.64;4,55.44,353.13,234.00,8.96;4,55.44,365.41,176.46,8.64">For each pair of consecutive layers l and l + 1, we computed the mutual information using kernel density estimation:</s></p><formula xml:id="formula_11" coords="4,81.47,388.32,173.40,22.31">MI(l, l + 1) = p(x, y) log p(x, y) (p(x)p(y)</formula><p><s coords="4,55.08,425.37,234.35,8.96;4,55.44,437.32,234.00,8.96;4,55.44,449.60,75.09,8.64">where p(x, y) is the joint probability density of activations at layers l and l + 1, and p(x) and p(y) are their respective marginal densities.</s></p><p><s coords="4,54.97,467.53,236.13,8.64;4,55.44,479.48,235.65,8.64;4,55.44,491.44,58.74,8.64">We implemented this calculation using Gaussian kernel density estimation to handle the continuous nature of the activation space.</s><s coords="4,118.99,491.44,170.44,8.64;4,55.44,503.39,234.00,8.64;4,55.44,515.35,19.97,8.64">For numerical stability, we added a small constant (1e-10) to avoid division by zero and taking logs of zero.</s><s coords="4,78.50,515.35,210.94,8.64;4,55.44,527.31,86.01,8.64">The mutual information was computed in nats using the natural logarithm.</s></p><p><s coords="4,55.13,545.24,234.31,8.64;4,55.44,557.19,234.00,8.64;4,55.44,568.83,234.00,8.96;4,55.44,581.10,235.65,8.64;4,55.44,593.06,14.11,8.64">The computation was performed independently for each unit in the residual stream, using the distribution of activations derived from N = 1000 batches, to track how different components of the representation evolved through the layers.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6." coords="4,55.44,617.80,157.39,8.96">Dynamics of Individual RS Units</head><p><s coords="4,55.13,636.84,234.31,8.64;4,55.44,648.80,234.00,8.64;4,55.44,660.75,234.00,8.64;4,55.44,672.71,110.06,8.64">To examine the dynamics of individual RS units' activations across layers, we created phase portraits in 2D phase space defined by each unit's activation value and the gradient of that activation across layers.</s><s coords="4,168.57,672.39,120.87,8.96;4,55.44,684.66,235.65,8.64;4,55.44,696.30,38.37,8.96;4,93.81,694.73,2.82,6.12;4,93.81,701.16,2.52,6.12;4,99.67,696.30,189.77,8.96">For each unit i, we constructed a phase portrait where the x-axis represents the unit's activation a i l at layer l, and the y-axis represents its gradient</s></p><formula xml:id="formula_12" coords="4,55.44,706.37,50.34,13.47">∇a i l = d dl a i l .</formula><p><s coords="4,307.13,353.45,217.51,8.64">The resulting portraits revealed rotational dynamics.</s><s coords="4,530.95,353.45,10.50,8.64;4,307.44,365.41,234.00,8.64;4,307.44,377.36,234.00,8.64;4,307.44,389.32,144.25,8.64">To quantify these, the number of rotations in this 2D space was calculated by tracking the cumulative change in angle of the tangent vector along this trajectory.</s><s coords="4,455.54,389.32,85.90,8.64;4,307.44,401.27,234.00,8.64;4,307.44,413.23,53.72,8.64">Specifically, for each unit we centered the trajectory at the origin by subtracting initial values:</s></p><formula xml:id="formula_13" coords="4,390.28,422.79,67.83,29.88">x l = a i l -a i 0 y l = ∇a i l -∇a i 0</formula><p><s coords="4,306.97,465.53,234.46,8.64;4,307.44,477.48,27.13,8.64">We then computed tangent vectors between consecutive points:</s></p><formula xml:id="formula_14" coords="4,389.39,489.12,69.57,26.84">∆x l = x l+1 -x l ∆y l = y l+1 -y l</formula><p><s coords="4,307.44,529.78,235.65,8.64;4,307.44,541.74,17.71,8.64">Subsequently we calculated the angles of these tangent vectors:</s></p><formula xml:id="formula_15" coords="4,374.02,553.38,100.84,9.65">θ l = arctan 2(∆y l , ∆x l )</formula><p><s coords="4,307.44,576.86,235.65,8.64;4,307.44,588.49,204.06,8.96">Following this, we computed angle changes between consecutive points, adjusting for discontinuities at ±π:</s></p><formula xml:id="formula_16" coords="4,390.91,609.16,66.52,9.65">∆θ l = θ l+1 -θ l</formula><p><s coords="4,307.44,636.13,220.34,8.64">Finally, the total number of rotations was calculated as:</s></p><formula xml:id="formula_17" coords="4,390.40,654.10,67.54,26.88">R = 1 2π l ∆θ l</formula><p><s coords="4,307.13,696.62,235.96,8.64;4,307.44,708.58,234.00,8.64;5,55.44,70.54,234.17,8.64;5,55.44,82.49,40.16,8.64">To establish statistical significance, we compared the observed number of rotations with a null distribution generated by randomly permuting the layer ordering 1000 times for each unit.</s><s coords="5,100.79,82.49,188.64,8.64;5,55.44,94.45,234.00,8.64;5,55.44,106.40,37.35,8.64">This shuffle control preserved the distribution of activations while disrupting any systematic rotational structure.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7." coords="5,55.44,131.15,214.85,8.96;5,72.52,143.10,54.29,8.96">Dimensionality Reduction with a Compressing Autoencoder</head><p><s coords="5,55.13,162.14,234.31,8.64;5,55.44,174.10,234.00,8.64;5,55.19,186.05,235.91,8.64;5,55.44,198.01,52.41,8.64">To analyze the high-dimensional activation patterns in the RS, we trained an autoencoder on the RS activations and visualized the trajectories across layers in reduced dimensional space.</s></p><formula xml:id="formula_18" coords="5,55.08,301.99,142.11,34.41">d i = d in • r i where r = (d bottle /d in ) 1/(k-1)</formula><p><s coords="5,188.66,327.06,102.44,8.64;5,55.44,339.02,101.69,8.64">is the reduction ratio between consecutive layers.</s></p><p><s coords="5,55.13,356.95,234.31,8.64;5,55.44,368.91,234.24,8.64;5,55.44,380.86,234.00,8.64;5,55.19,392.82,87.81,8.64">The Wikitext dataset was used for training and evaluating the CAE, with a train set of 85k batches and test set of 15k batches, each of which contained 64 samples (i.e. an RS vector for each layer).</s></p><p><s coords="5,55.44,410.75,234.35,8.64;5,55.44,422.71,234.00,8.64;5,55.44,434.66,235.65,8.64;5,55.44,446.62,34.48,8.64">Each layer consists of a linear transformation followed by layer normalization and ReLU activation (except for the final encoder and decoder layers which omit these nonlinearities).</s><s coords="5,93.01,446.62,196.61,8.64;5,55.08,458.25,101.94,8.96;5,157.02,456.68,10.20,6.12;5,170.21,458.57,119.23,8.64;5,55.44,470.53,40.12,8.64">The model was trained using the Adam optimizer with learning rate α = 10 -3 to minimize the mean squared error loss:</s></p><formula xml:id="formula_19" coords="5,111.74,488.09,120.91,30.32">L(θ) = 1 n n i=1 ∥x i -f θ (x i )∥ 2 2</formula><p><s coords="5,55.08,529.87,234.36,9.68;5,55.44,541.85,131.24,8.96">where x i are the input activation patterns and f θ is the autoencoder with parameters θ.</s><s coords="5,193.73,542.17,95.88,8.64;5,55.44,554.12,234.00,8.64;5,55.19,566.08,184.56,8.64">Training proceeded for a maximum of 100 epochs with early stopping based on validation loss with a patience of 10 epochs.</s><s coords="5,245.01,566.08,44.43,8.64;5,55.44,578.03,196.44,8.64">The model achieving the lowest validation loss was retained.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.8." coords="5,55.44,602.78,225.20,8.96">PCA and Perturbation of Activation Trajectories</head><p><s coords="5,55.13,621.82,234.31,8.64;5,55.44,633.78,234.00,8.64;5,55.44,645.73,235.65,8.64;5,55.44,657.69,234.00,8.64;5,55.44,669.64,95.14,8.64">To better understand the trajectories of the RS in reduced dimensional space and perform interpretable perturbations in these trajectories in reduced space, we performed Principal Component Analysis (PCA) using Singular Value Decomposition (SVD).</s><s coords="5,153.97,669.32,135.47,8.96;5,307.44,70.22,234.00,8.96;5,307.44,82.14,146.58,9.32;5,454.02,80.60,35.46,6.12;5,492.35,82.49,49.33,8.64;5,307.01,94.10,28.75,9.33;5,335.75,92.55,29.24,6.12;5,368.38,94.45,174.71,8.64;5,307.44,106.40,23.43,8.64">For a dataset of N samples with activations from L layers, each of dimension D, we first reshape the activation tensor RS ∈ R N ×2L×D into a matrix X ∈ R 2N L×D by combining the sample and layer dimensions.</s><s coords="5,336.54,106.40,206.29,8.64">Then we center the data by subtracting the mean:</s></p><formula xml:id="formula_20" coords="5,307.01,118.01,153.32,49.29">X c = X -µ, where µ = 1 2N L 2N L i=1 x i</formula><p><s coords="5,307.13,182.44,192.01,8.64">Then we compute the SVD of the centered data:</s></p><formula xml:id="formula_21" coords="5,307.08,200.21,211.40,31.89">X c = UΣV T where U ∈ R 2N L×D , Σ diag ∈ R D , and V ∈ R D×D</formula><p><s coords="5,307.44,240.69,234.00,8.64;5,307.44,252.65,106.16,8.64">For subsequent analysis, we project the data onto the first two principal components:</s></p><formula xml:id="formula_22" coords="5,391.90,272.46,65.07,9.68">Z = X c V[:, : 2]</formula><p><s coords="5,307.08,292.62,236.10,8.99">where V[:, : 2] contains the first two right singular vectors.</s><s coords="5,307.13,304.60,234.31,8.96;5,307.44,316.88,11.07,8.64">The explained variance ratio for component k is computed as:</s></p><formula xml:id="formula_23" coords="5,307.08,324.20,146.25,42.55">r k = σ 2 k d i=1 σ 2 i where σ k is the k-th singular value.</formula><p><s coords="5,307.13,375.00,234.31,8.99;5,307.44,389.17,7.20,7.11;5,314.64,385.41,32.92,6.12;5,351.01,387.31,87.32,8.98;5,438.33,385.41,32.92,6.12;5,474.70,387.31,66.74,8.64;5,307.44,399.26,150.30,8.64">The resulting low-dimensional representation Z ∈ R (2N L)×2 is then reshaped to R N ×2L×2 for visualization and analysis of activation trajectories.</s></p><p><s coords="5,307.13,417.20,235.96,8.64;5,307.44,429.15,234.34,8.64;5,307.44,441.11,234.00,8.64;5,307.44,453.06,234.00,8.64;5,307.44,465.02,140.83,8.64">To investigate how perturbations in the learned lowdimensional space affect model behavior, we systematically explored the 2D PCA space by creating a uniform grid of points to which we could teleport the activations at various stages (layers) in the RS trajectory.</s><s coords="5,451.35,465.02,91.74,8.64;5,307.44,476.65,234.00,9.65;5,307.44,488.61,235.65,8.96;5,307.44,500.56,234.00,8.96;5,307.44,512.84,151.53,8.64">Specifically, we generated n × n evenly spaced points across a range [r min , r max ] in each principal component dimension, where n is the number of points per dimension (typically 10) and r represents the range of perturbation magnitudes.</s><s coords="5,462.08,512.49,79.36,9.68;5,307.44,524.79,234.00,8.64;5,307.44,536.75,177.37,8.64">For each point z i in this 2D grid, we projected it back to the original activation space using the inverse PCA transformation:</s></p><formula xml:id="formula_24" coords="5,383.72,554.52,81.43,11.72">x i = z i V[: 2] T + µ</formula><p><s coords="5,307.08,576.72,234.36,8.99;5,307.44,588.67,199.35,8.99">where V[: 2] contains the first two principal components and µ is the mean of the original activation distribution.</s><s coords="5,509.75,589.02,31.68,8.64;5,307.44,600.98,234.00,8.64;5,307.44,612.93,234.00,8.64;5,307.44,624.89,128.81,8.64">We then injected these reconstructed activations into specific layers of the language model by replacing the original activations at the input to the attention layer.</s><s coords="5,439.32,624.89,102.11,8.64;5,307.44,636.84,234.00,8.64;5,307.44,648.80,235.75,8.64">This process was repeated across multiple network layers to analyze how perturbations at different depths affect the model's internal representations.</s><s coords="5,307.08,660.75,234.36,8.64;5,307.44,672.71,125.28,8.64">As perturbations above the first layer we used a standard input prompt ("I'm sorry, Dave.</s><s coords="5,435.81,672.71,106.30,8.64">I'm afraid I can't do that.")</s><s coords="5,307.44,684.66,125.48,8.64">to record the initial trajectories.</s><s coords="5,436.04,684.66,105.40,8.64;5,307.44,696.62,234.00,8.64;5,307.44,708.58,46.75,8.64">This input also served as a control to establish a baseline for comparison of perturbed trajectories.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." coords="6,55.44,235.26,49.15,10.75">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1." coords="6,55.44,256.01,233.92,8.96;6,72.88,267.96,198.29,8.96">Transformer residual stream (RS) activations grow dense and are highly correlated over the layers</head><p><s coords="6,55.44,287.00,234.00,8.64;6,55.44,298.96,235.65,8.64;6,55.44,310.91,235.74,8.64;6,54.69,322.87,17.78,8.64">Our initial investigation into the activations of the RS showed that activations at the last token position for input sequences increase in magnitude over the layers (Fig. <ref type="figure" coords="6,54.69,322.87,8.89,8.64" target="#fig_0">1B</ref>).</s><s coords="6,75.46,322.87,213.98,8.64;6,55.44,334.82,234.00,8.64;6,55.44,346.78,117.15,8.64">Most units showed low-magnitude activations at the lowest layers, with the majority increasing in magnitude progressively over the layers.</s><s coords="6,175.68,346.78,113.76,8.64;6,55.44,358.42,234.00,8.96;6,55.44,367.74,234.00,11.59;6,55.44,382.65,234.00,8.64;6,55.44,394.60,147.02,8.64">Sorting the mean activations across N = 1000 data batches by the mean activation at the last layer, π = argsort( h2L ), revealed that activations not only grow dense as the layers progress, but that units tend to preserve their sign over the layers.</s></p><p><s coords="6,55.13,412.53,235.55,8.64;6,55.08,424.49,236.10,8.64">To quantify the continuity of representations between layers, we analyzed pairwise correlations between layer activations.</s><s coords="6,54.97,436.44,234.63,8.64;6,55.44,448.40,55.52,8.64;6,110.96,446.51,16.94,6.12;6,110.96,452.94,2.52,6.12;6,132.90,448.05,20.83,8.77;6,153.72,446.51,18.88,6.12;6,153.72,452.94,2.52,6.12">We analyzed two types of transitions (Fig. <ref type="figure" coords="6,222.19,436.44,8.68,8.64" target="#fig_0">1C</ref>): within-layer transitions (h Attn l → h M LP l</s></p><p><s coords="6,174.18,448.40,115.27,8.64;6,55.11,460.35,9.68,8.64;6,64.79,458.46,18.88,6.12;6,64.79,464.90,2.52,6.12;6,88.02,460.00,19.10,8.77;6,107.11,458.46,16.94,6.12;6,107.11,464.90,12.65,6.12;6,124.54,460.35,5.81,8.64">) and cross-layer transitions (h M LP l → h Attn l+1 ).</s><s coords="6,55.13,478.29,234.31,8.64;6,55.44,490.24,235.65,8.64;6,55.44,502.20,235.25,8.64;6,55.08,514.15,236.01,8.64;6,55.44,526.11,17.21,8.64">The within-layer correlations were consistently higher than the cross-layer correlations, suggesting different information processing regimes of attention and MLP operations, with the former producing smaller changes to the RS vectors.</s><s coords="6,75.74,526.11,213.70,8.64;6,55.44,537.74,234.67,8.96;6,55.44,550.02,102.88,8.64">The correlation strength increased over layers for both transition types, with correlations starting high (r &gt; 0.8) even in the earliest layers.</s><s coords="6,161.42,550.02,128.02,8.64;6,55.44,561.97,234.00,8.64;6,55.44,573.61,234.00,8.96;6,55.44,585.88,234.00,8.64;6,55.44,597.84,210.20,8.64">For each unit, the distribution of correlations over the 63 layer transitions was binned into intervals [0, 1] to create a density plot (Fig. <ref type="figure" coords="6,231.42,573.93,9.14,8.64" target="#fig_0">1D</ref>), revealing that despite the RS being a nonprivileged basis, most units maintain strong correlations throughout the network.</s></p><p><s coords="6,54.97,615.77,234.46,8.64;6,55.44,627.73,235.66,8.64;6,55.44,639.68,234.00,8.64;6,55.19,651.64,71.12,8.64">While correlations of activations revealed that individual units exhibited ever stronger linear relationships for successive layers, we were keen to examine the changes of the RS vector as a whole.</s><s coords="6,129.40,651.64,160.21,8.64;6,55.44,663.59,234.17,8.64;6,55.11,675.55,9.66,8.64;6,64.77,673.65,16.94,6.12;6,64.77,680.09,2.52,6.12;6,84.98,675.20,19.10,8.77;6,104.08,673.65,18.88,6.12;6,104.08,680.09,2.52,6.12;6,124.53,675.55,165.08,8.64;6,55.11,687.50,39.06,8.64">Cosine similarity of layerwise RS vector pairs increased as a function of layers, with within-layer (h Attn l → h M LP l ) transitions more similar than cross-layer (Fig. <ref type="figure" coords="6,77.30,687.50,8.44,8.64" target="#fig_0">1E</ref>).</s></p><p><s coords="6,55.13,705.43,234.31,8.64;6,307.44,237.02,235.65,8.64;6,307.44,248.98,47.13,8.64">To characterize the dynamics of representation change through layers, we computed the velocity of the RS representation.</s><s coords="6,357.81,248.98,183.62,8.64;6,307.44,260.93,181.93,8.64">The velocity profile showed a distinct pattern of acceleration through the model (Fig. <ref type="figure" coords="6,472.71,260.93,8.33,8.64" target="#fig_0">1F</ref>).</s><s coords="6,492.26,260.93,49.17,8.64;6,307.44,272.89,234.00,8.64;6,307.44,284.84,235.65,8.64;6,307.44,296.80,209.72,8.64">Early layers maintain relatively constant velocities, while later layers exhibited a slight increase in velocity, with the steepest acceleration occurring in the last third of the model.</s><s coords="6,523.37,296.80,18.07,8.64;6,307.44,308.75,235.65,8.64;6,307.44,320.71,234.34,8.64;6,307.44,332.66,102.31,8.64">This acceleration pattern holds for both within-layer and crosslayer transitions, though cross-layer transitions consistently showed higher velocities.</s><s coords="6,412.85,332.66,128.59,8.64;6,307.44,344.62,234.00,8.64;6,307.44,356.57,234.00,8.64;6,307.44,368.53,235.65,8.64;6,307.44,380.49,151.90,8.64">This progressive acceleration of representational change, combined with our observations of increasing activation magnitudes and correlations, suggests that the transformer RS systematically amplifies certain representational directions in later layers.</s></p><p><s coords="6,307.08,398.42,234.36,8.64;6,307.44,410.37,234.00,8.64;6,307.44,422.33,126.00,8.64">Analysis of mutual information (MI) for given RS units at successive layers revealed three distinct phenomena in information flow (Fig. <ref type="figure" coords="6,405.22,422.33,14.11,8.64" target="#fig_0">1G,</ref><ref type="figure" coords="6,419.33,422.33,4.70,8.64">H</ref>).</s><s coords="6,436.81,422.33,104.63,8.64;6,307.44,434.28,234.00,8.64;6,307.44,446.24,113.23,8.64;6,420.67,444.35,18.88,6.12;6,420.67,450.78,2.52,6.12;6,444.97,445.89,20.18,8.77;6,465.15,444.35,16.94,6.12;6,465.15,450.78,12.65,6.12;6,482.58,446.24,5.92,8.64">First, MI showed a sharp decline in early layers, with the steepest drops occurring at cross-layer transitions (h M LP l → h Attn l+1 ).</s><s coords="6,493.34,446.24,48.10,8.64;6,307.44,458.19,234.00,8.64;6,307.44,470.15,190.98,8.64">Second, the reduction in MI occured simultaneously with increasing linear correlations between layers (Fig. <ref type="figure" coords="6,470.76,470.15,13.83,8.64" target="#fig_0">1C,</ref><ref type="figure" coords="6,484.59,470.15,4.61,8.64">D</ref>).</s><s coords="6,501.14,470.15,40.30,8.64;6,307.44,482.10,234.00,8.64;6,307.44,494.06,114.05,8.64">Third, the MI decrease coincided with growing activation magnitudes through the layers (Fig. <ref type="figure" coords="6,404.06,494.06,8.72,8.64" target="#fig_0">1B</ref>).</s></p><p><s coords="6,307.13,511.99,235.96,8.64;6,307.44,523.95,234.00,8.64;6,307.44,535.90,82.25,8.64">The apparent paradox between decreasing MI and increasing correlations suggests a systematic transformation of the representation space.</s><s coords="6,392.79,535.90,148.82,8.64;6,307.44,547.86,235.65,8.64;6,307.44,559.81,33.02,8.64">While correlation captures only linear relationships, MI measures both linear and nonlinear dependencies.</s><s coords="6,345.75,559.81,195.69,8.64;6,307.44,571.77,234.00,8.64;6,307.44,583.72,234.00,8.64;6,307.44,595.68,234.00,8.64;6,307.44,607.63,206.79,8.64">This pattern, combined with our observation of decreasing dimensionality through the layers, suggests that the model may be redistributing information across more dimensions while favoring simpler, linearly-aligned features in later layers over complex nonlinear relationships.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2." coords="6,307.44,632.38,234.00,8.96">RS Unit Phase Space Exhibits Rotational Dynamics</head><p><s coords="6,307.44,651.10,234.00,8.96;6,307.44,663.06,105.90,8.96;6,413.34,661.48,2.82,6.12;6,413.34,667.92,2.52,6.12;6,418.68,663.06,88.48,8.96;6,507.16,661.48,2.82,6.12;6,507.16,667.92,2.52,6.12;6,513.24,663.06,7.75,8.74;6,526.24,661.17,4.15,6.12;6,524.96,668.53,6.67,6.12;6,532.86,663.06,5.27,8.74;6,538.12,661.48,2.82,6.12;6,538.12,667.92,2.52,6.12;6,307.44,675.33,53.47,8.64">For each unit i, we constructed phase portraits by plotting the unit's activation value a i l against its gradient ∇a i l = d dl a i l across layers.</s><s coords="6,364.02,675.33,179.08,8.64;6,307.44,687.28,234.00,8.64;6,307.44,699.24,137.58,8.64">Analysis of individual RS units in activationgradient space revealed rotational dynamics characteristic of unstable periodic orbits (Fig. <ref type="figure" coords="6,426.84,699.24,9.09,8.64" target="#fig_1">2A</ref>).</s><s coords="6,447.50,699.24,93.93,8.64;7,55.44,398.08,234.00,8.64;7,55.44,410.03,235.65,8.64;7,55.44,421.99,235.24,8.64;7,55.08,433.94,234.35,8.64;7,55.44,445.90,235.74,8.64">While most trajectories in this phase space were not particularly smooth, with abrupt changes in direction from one sublayer to the next, the overall portraits showed clear and consistent rotational patterns, with a mean of 10.74 rotations over the layers compared to approximately zero rotations in shuffle controls (Fig. <ref type="figure" coords="7,273.40,445.90,8.89,8.64" target="#fig_1">2B</ref>).</s><s coords="7,55.13,457.85,234.31,8.64;7,55.44,469.81,201.07,8.64">These rotations often spiraled out, increasing in magnitude on both axes as they progressed through the layers.</s><s coords="7,259.61,469.81,31.07,8.64;7,55.44,481.76,234.00,8.64;7,55.44,493.72,138.35,8.64">Further, the rotations were often centered at multiple points in the phase space, not only at the origin.</s></p><p><s coords="7,55.13,511.65,234.65,8.64;7,55.44,523.61,235.66,8.64;7,55.44,535.56,232.93,8.64">This rotational behavior was consistent across the majority of the 4096 units in the RS (Fig. <ref type="figure" coords="7,187.59,523.61,8.77,8.64" target="#fig_1">2C</ref>), suggesting a systematic organizational principle in the network's computation.</s></p><p><s coords="7,55.13,553.49,234.31,8.64;7,55.19,565.45,235.91,8.64;7,55.44,577.40,234.34,8.64;7,55.44,589.36,186.18,8.64">These observations are consistent with the data on increased velocity of the RS as a whole, and illustrate that individual RS units exhibit complex dynamics rather than simply increasing their activation magnitudes linearly.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3." coords="7,55.44,614.10,163.90,8.96">Reduced Dimensional Trajectories</head><p><s coords="7,55.13,633.14,234.31,8.64;7,55.44,645.10,235.65,8.64;7,55.44,657.05,234.00,8.64;7,55.44,669.01,54.98,8.64">To analyze the high-dimensional activation patterns in the RS, we used complementary dimensionality reduction approaches: a compressing autoencoder (CAE) (Fig <ref type="figure" coords="7,263.27,657.05,4.23,8.64" target="#fig_2">3</ref>) and PCA <ref type="bibr" coords="7,78.83,669.01,27.91,8.64">(Fig 4)</ref>.</s><s coords="7,116.93,669.01,172.51,8.64;7,55.44,680.97,235.65,8.64;7,55.44,692.92,235.65,8.64;7,55.44,704.88,60.70,8.64">The CAE was trained to pass RS vectors through successively lower-dimensional layers, until passing through a 2-dimensional bottleneck and being reconstructed again.</s><s coords="7,123.82,704.88,165.62,8.64;7,307.44,398.08,182.53,8.64">Here RS vectors at each sublayer were treated as individual samples to be learned.</s><s coords="7,496.97,398.08,46.12,8.64;7,307.44,410.03,234.00,8.64;7,307.11,421.99,38.76,8.64">The bottleneck representation revealed structured, curving trajectories (Fig. <ref type="figure" coords="7,328.79,421.99,8.54,8.64" target="#fig_2">3B</ref>).</s><s coords="7,347.99,421.99,193.45,8.64;7,307.44,433.94,234.00,8.64;7,307.11,445.90,38.82,8.64">The trajectories in this space straightened over the layers, with increasing distance between successive layers (Fig. <ref type="figure" coords="7,328.85,445.90,8.54,8.64" target="#fig_2">3C</ref>).</s><s coords="7,348.20,445.90,193.25,8.64;7,307.44,457.85,234.00,8.64;7,307.44,469.81,217.23,8.64">The model's reconstruction of RS vectors showed increasing explained variance, with a large jump after the early layers and a slower increase thereafter (Fig. <ref type="figure" coords="7,506.69,469.81,8.99,8.64" target="#fig_2">3D</ref>).</s></p><p><s coords="7,307.44,487.74,234.00,8.64;7,307.44,499.70,235.25,8.64;7,307.08,511.65,234.36,8.64;7,307.44,523.61,206.89,8.64">Principal Component Analysis revealed that early layers distribute variance across more dimensions than later layers, with later layers requiring fewer principal components to explain the same amount of variance (Fig. <ref type="figure" coords="7,478.08,523.61,13.60,8.64" target="#fig_3">4A,</ref><ref type="figure" coords="7,491.67,523.61,9.06,8.64">B,</ref><ref type="figure" coords="7,500.74,523.61,4.53,8.64">C</ref>).</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4." coords="7,307.44,548.35,233.93,8.96;7,324.88,560.31,59.29,8.96">RS Trajectories Exhibit Attractor-like Dynamics in Lower Layers</head><p><s coords="7,307.08,579.35,236.01,8.64;7,307.44,591.30,234.00,8.64;7,307.44,603.26,77.99,8.64">Visualization of RS trajectories in PCA space revealed systematic patterns in how representations evolve through the network (Fig. <ref type="figure" coords="7,367.09,603.26,9.17,8.64" target="#fig_3">4A</ref>).</s><s coords="7,388.27,603.26,154.83,8.64;7,307.08,615.21,234.36,8.64;7,307.44,627.17,235.65,8.64;7,307.44,639.12,234.17,8.64;7,307.44,650.73,6.37,8.77;7,313.81,649.18,16.94,6.12;7,313.81,655.62,2.52,6.12;7,335.35,650.73,20.43,8.77;7,355.78,649.18,18.88,6.12;7,355.78,655.62,2.52,6.12;7,379.45,650.73,72.05,8.99;7,451.49,649.18,18.88,6.12;7,451.49,655.62,2.52,6.12;7,476.05,650.73,20.43,8.77;7,496.48,649.18,16.94,6.12;7,496.48,655.62,12.65,6.12;7,517.13,651.08,25.96,8.64;7,307.44,663.03,21.87,8.64">Individual trajectories and their layerwise means demonstrated a consistent path through this reduced space, suggesting a structured computation process, with slightly offset trajectories for the within-layer h Attn l → h M LP l and cross-layer h M LP l → h Attn l+1 transitions.</s></p><p><s coords="7,307.13,680.97,235.96,8.64;7,307.44,692.92,234.00,8.64;7,307.44,704.88,235.74,8.64;8,55.09,70.54,18.34,8.64">To understand the stability of these trajectories, we performed perturbation analysis by "teleporting" the RS state to various points in the PCA space at different layers (Fig. <ref type="figure" coords="8,55.09,70.54,9.17,8.64" target="#fig_3">4D</ref>).</s><s coords="8,76.42,70.54,214.67,8.64;8,55.44,82.49,234.00,8.64;8,55.44,94.45,234.00,8.64;8,55.44,106.40,235.66,8.64;8,55.44,118.36,17.89,8.64">We hypothesized that RS progression through transformer layers might reveal attractor-like dynamics, such that moving the activations to various portions of this phase space would eventually bring them back to the mean trajectory.</s></p><p><s coords="8,55.13,136.29,234.66,8.64;8,55.08,148.25,217.40,8.64">The response to these perturbations varied systematically with layer depth and location of the teleported points.</s><s coords="8,275.65,148.25,13.96,8.64;8,55.44,160.20,35.14,8.64;8,55.44,178.13,235.74,8.64">For instance, Still, the effect of the perturbations varied systematically.</s><s coords="8,55.44,190.09,234.36,8.64;8,55.44,202.04,235.65,8.64;8,55.44,214.00,202.01,8.64">Perturbations at layer 0 (i.e. starting the trajectories at new points) resulted in highly variable dynamics, with trajectories often ending up far from the unperturbed mean.</s><s coords="8,260.51,214.00,30.59,8.64;8,55.44,225.96,234.00,8.64;8,55.44,237.91,135.28,8.64">This effect was even more drastic when interfering in the dynamics at the penultimate LLM layer, 31.</s><s coords="8,193.81,237.91,95.62,8.64;8,55.11,249.87,234.33,8.64;8,55.44,261.82,234.00,8.64;8,55.44,273.78,215.56,8.64">Mid-layer perturbations (layers 7, 15, 23) exhibited a more robust recovery, with lower variance on the perturbed trajectories and lower mean squared error between the control sequence (Fig. <ref type="figure" coords="8,253.02,273.78,8.99,8.64" target="#fig_3">4D</ref>).</s><s coords="8,55.13,291.71,235.96,8.64;8,55.44,303.66,235.65,8.64;8,55.44,315.62,227.45,8.64">This data suggests that the transformer develops stable computational channels that actively maintain desired trajectories, possibly self-correcting errors through its dynamics.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." coords="8,55.44,342.42,65.77,10.75">Discussion</head><p><s coords="8,55.44,363.56,234.35,8.64;8,55.44,375.51,234.00,8.64;8,55.44,387.47,100.47,8.64">In this work, we approached mechanistic interpretability of transformer circuits through a dynamical systems lens inspired by neuroscience.</s><s coords="8,159.01,387.47,131.10,8.64;8,55.44,399.42,234.00,8.64;8,55.44,411.38,234.17,8.64;8,55.08,423.33,234.36,8.64;8,55.44,435.29,135.33,8.64">Treating the residual stream (RS) of the Llama 3.1 8B LLM, we found that individual RS units exhibited increasingly strong correlations from layer to layer while growing in magnitude but with a sharp drop in mutual information after the early layers.</s><s coords="8,193.85,435.29,97.24,8.64;8,55.44,447.24,235.66,8.64;8,55.44,459.20,50.18,8.64">RS units displayed rotational structures, with dynamics reminiscent of unstable periodic orbits.</s><s coords="8,108.72,459.20,181.07,8.64;8,55.44,471.15,235.65,8.64;8,55.44,483.11,170.28,8.64">The RS vector as a whole increased in density of activations, with more alignment of the vector at successive layers as revealed by cosine similarity.</s><s coords="8,228.85,483.11,60.95,8.64;8,55.44,495.06,234.00,8.64;8,55.44,507.02,234.00,8.64;8,55.44,518.97,234.35,8.64;8,55.44,530.93,130.30,8.64">Dimensionality reduction methods revealed low-dimensional dynamics as a whole, with trajectories that curved in low-dimensional space before straightening out and jumping progressively farther at each successive layer.</s><s coords="8,190.78,530.93,98.66,8.64;8,55.44,542.88,235.25,8.64;8,55.44,554.84,234.00,8.64;8,55.44,566.79,130.59,8.64">Finally, perturbations to the RS at various layers revealed a self-correcting tendency, returning immediately close by to original spots in reduced space, akin to a pseudo-attractor.</s></p><p><s coords="8,55.44,584.73,235.25,8.64;8,55.08,596.68,234.36,8.64;8,55.44,608.64,234.00,8.64;8,55.11,620.59,234.33,8.64;8,55.44,632.55,235.65,8.64;8,55.44,644.50,113.05,8.64">In the broader context of mechanistic interpretability, whereas recent advances have focused on circuits <ref type="bibr" coords="8,262.34,596.68,27.10,8.64;8,55.44,608.64,49.12,8.64" target="#b17">(Singh et al., 2024;</ref><ref type="bibr" coords="8,107.67,608.64,84.96,8.64" target="#b9">Kissane et al., 2024)</ref> or sparse autoencoders <ref type="bibr" coords="8,55.11,620.59,84.87,8.64" target="#b4">(Bricken et al., 2023)</ref>, the dynamical systems approach to understanding transformers is nascent and has largely received theoretical treatment.</s><s coords="8,171.58,644.50,117.86,8.64;8,55.44,656.46,234.35,8.64;8,55.44,668.41,234.00,8.64;8,55.44,680.37,225.44,8.64">Investigating the dynamics of complicated systems such as transformers could help unify theoretical insights from dynamical systems theory with large-scale data analysis and experimental manipulation.</s></p><p><s coords="8,54.97,698.30,234.47,8.64;8,307.44,70.54,235.25,8.64;8,307.44,82.49,204.85,8.64">While the present results are based on a popular open source model, Llama 3.1, preliminary analysis on another model, Gemma 2, showed similar results (data not shown).</s><s coords="8,515.38,82.49,26.06,8.64;8,307.08,94.45,236.01,8.64;8,307.44,106.40,235.24,8.64;8,307.44,118.36,12.42,8.64">Future work beyond LLMs may examine dynamics of the residual stream in other AI architectures with a residual stream, i.e.</s><s coords="8,325.92,118.36,36.41,8.64">ResNets.</s><s coords="8,368.41,118.36,173.03,8.64;8,307.44,130.31,234.00,8.64;8,307.44,142.27,234.00,8.64;8,307.44,154.22,79.07,8.64">Moreover, while we presently focused on encoded sequences only at the last token position, it will be crucial to understand how whole sequences of tokens influence dynamics.</s><s coords="8,389.60,154.22,151.84,8.64;8,307.44,166.18,234.35,8.64;8,307.44,178.13,215.47,8.64">The observed dynamics likely evolved over the course of model training, and subsequent work may investigate such dynamics over the course of learning.</s></p><p><s coords="8,307.44,196.07,234.00,8.64;8,307.11,208.02,235.98,8.64;8,307.44,219.98,234.24,8.64;8,307.44,231.93,188.87,8.64">Despite the high dimensionality of the residual stream (D=4096), the dynamics we observe are remarkably lowdimensional, as shown by both the autoencoder bottleneck and the interpretable structure in PCA space.</s><s coords="8,502.96,231.93,40.13,8.64;8,307.44,243.89,234.35,8.64;8,307.44,255.84,235.65,8.64;8,307.44,267.80,131.30,8.64">This lowdimensional behavior may reflect the relative simplicity of our experimental task of encoding high-probability sequences of tokens from Wikitext.</s><s coords="8,441.83,267.80,99.61,8.64;8,307.44,279.75,235.25,8.64;8,307.44,291.71,234.00,8.64;8,307.44,303.66,173.71,8.64">More complex tasks, like those requiring in-context learning or complex reasoning, may reveal richer dynamical structures by taking advantage of the network's representational capacity.</s><s coords="8,485.89,303.66,55.54,8.64;8,307.44,315.62,234.00,8.64;8,307.44,327.57,185.98,8.64">This suggests future work examining how the dimensionality and structure of these dynamics scales with task complexity.</s></p><p><s coords="8,307.44,345.51,234.00,8.64;8,307.44,357.46,235.65,8.64;8,307.19,369.42,234.60,8.64;8,307.44,381.37,234.00,8.64;8,307.44,393.33,66.28,8.64">Finally, while perturbing activations by 'teleporting' them to various portions of reduced-dimensional space was revealing, it is possible this approach does not realistically capture how a model might respond to more subtle changes to its activations.</s><s coords="8,376.81,393.33,164.64,8.64;8,307.44,405.28,234.00,8.64;8,307.44,417.24,31.82,8.64">Future efforts may attempt noise injection or swapping of activations from one input data sample to another.</s></p><p><s coords="8,307.13,435.17,234.31,8.64;8,307.44,447.13,235.65,8.64;8,307.44,459.08,234.00,8.64;8,307.44,471.04,97.63,8.64">The discovery of rotational dynamics in activation-gradient space, combined with the self-correcting properties observed in our perturbation analysis, points to an emerging organizational principle.</s><s coords="8,408.15,471.04,133.29,8.64;8,307.44,482.99,234.00,8.64;8,307.44,494.95,45.91,8.64">The network appears to construct stable computational channels that actively maintain desired trajectories.</s><s coords="8,356.47,494.95,186.62,8.64;8,307.44,506.90,234.00,8.64;8,307.44,518.86,235.75,8.64">This self-correction is most robust in lower layers, where cosine similarity and velocity among succeeding RS vectors are lowest, and mutual information the highest.</s><s coords="8,307.44,530.81,234.00,8.64;8,307.44,542.77,235.66,8.64;8,307.44,554.72,234.00,8.64;8,307.44,566.68,39.79,8.64">Finally, the strong correlations and low-dimensional flows imply that the network may perform highly distributed computations rather than localizable "grandmother cell" style encoding.</s><s coords="8,353.74,566.68,187.70,8.64;8,307.44,578.63,234.00,8.64;8,307.44,590.59,234.00,8.64;8,307.44,602.54,52.86,8.64">Insights such as presented here could inform both a theoretical understanding of transformer dynamics and practical approaches to architecture design and training optimization.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="8,307.44,629.34,91.30,10.75">Impact Statement</head><p><s coords="8,307.13,650.48,235.96,8.64;8,307.44,662.44,234.35,8.64;8,307.44,674.39,55.09,8.64">This work explores the mechanistic interpretability of transformers from a dynamical systems perspective inspired by neuroscience.</s><s coords="8,365.62,674.39,175.82,8.64;8,307.44,686.35,234.00,8.64;8,307.44,698.30,139.47,8.64">By bridging dynamical systems theory with transformer interpretability, we introduced a novel way to understand the behavior of LLMs.</s><s coords="8,450.55,698.30,90.89,8.64;9,55.44,70.54,235.66,8.64;9,55.08,82.49,234.36,8.64;9,55.44,94.45,71.11,8.64">This approach follows information flows and transformations through neural networks, similar to how neural computations in the brain evolve over time.</s><s coords="9,131.53,94.45,159.56,8.64;9,55.44,106.40,234.00,8.64;9,55.44,118.36,213.59,8.64">Our findings about residual stream dynamics and their self-correcting properties can inform the development of more reliable and efficient AI systems.</s><s coords="9,272.08,118.36,17.36,8.64;9,55.44,130.31,234.00,8.64;9,55.44,142.27,235.66,8.64;9,55.44,154.22,188.05,8.64">This interdisciplinary approach unlocks a better understanding of both biological and artificial systems, and allows AI researchers to build more interpretable systems.</s><s coords="9,247.91,154.22,41.79,8.64;9,55.44,166.18,234.00,8.64;9,55.44,178.13,235.65,8.64;9,55.44,190.09,62.72,8.64">This work contributes to the larger goal of creating AI systems that are transparent and understandable for safe and ethical deployment in society.</s></p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,54.94,280.18,486.50,7.77;2,55.44,290.79,486.00,8.12;2,55.14,301.78,486.30,8.09;2,55.44,312.71,486.00,8.12;2,55.44,323.66,486.00,8.12;2,55.44,334.62,486.00,8.12;2,55.44,345.58,486.00,8.12;2,55.44,356.58,5.89,7.89;2,61.34,354.84,15.83,5.24;2,61.34,360.50,2.40,5.24;2,55.44,67.06,486.03,214.42"><head>Figure 1 .</head><label>1</label><figDesc><div><p><s coords="2,54.94,280.18,32.38,7.77">Figure 1.</s><s coords="2,91.80,280.18,449.64,7.77;2,55.44,291.14,118.23,7.77">Transformer residual stream (RS) activations grow dense over the layers, are highly correlated among successive layers, and exhibit nonstationary dynamics.</s><s coords="2,178.45,290.79,362.99,8.12;2,55.14,301.78,316.58,8.09">A: Activations of the transformer RS were captured before layernorm and the attention operation (pre-Attn) and before the MLP at each layer of Llama 3.1 8B, resulting in 64 × 4096.</s><s coords="2,374.51,302.10,67.65,7.77">'layers' by 'units'.</s><s coords="2,444.96,302.10,96.49,7.77;2,55.44,313.05,384.49,7.77">Activations were analyzed at the last token position for data samples from the WIKITEXT-2-RAW-V1 dataset unless otherwise noted.</s><s coords="2,442.72,312.71,98.73,8.12;2,55.44,323.73,72.82,8.06">B: Mean activations across N = 1000 samples.</s><s coords="2,131.04,323.66,307.95,8.12">C: Correlations of activations for unit u between layer l and l + 1 over data samples.</s><s coords="2,441.77,324.01,99.67,7.77;2,55.44,334.97,173.14,7.77">For most units, correlations among successive layers increase over the layers.</s><s coords="2,231.36,334.62,198.26,8.12">D: Histogram of correlations across layers for each unit.</s><s coords="2,432.41,334.97,109.03,7.77;2,55.44,345.93,316.25,7.77">Despite the residual stream not having privileged basis, activations of most units are highly correlated from layer to layer.</s><s coords="2,374.49,345.58,166.95,8.12;2,55.44,356.58,5.89,7.89;2,61.34,354.84,15.83,5.24;2,61.34,360.50,2.40,5.24">E: Cosine similarity among pairs of RS vectors h Attn l</s></p></div></figDesc><graphic coords="2,55.44,67.06,486.03,214.42" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,54.94,279.83,486.50,8.12;4,55.44,290.79,486.00,8.12;4,55.44,302.10,486.00,7.77;4,55.44,312.71,486.00,8.12;4,55.13,324.01,166.90,7.77;4,55.44,67.06,486.03,214.42"><head>Figure 2 .</head><label>2</label><figDesc><div><p><s coords="4,54.94,280.18,32.38,7.77">Figure2.</s><s coords="4,91.79,280.18,329.55,7.77">Portraits of Individual RS Units Show Rotational Dynamics akin to Unstable Periodic Orbits.</s><s coords="4,424.12,279.83,117.32,8.12;4,55.44,291.14,299.31,7.77">A: Portraits of individual units in activation-gradient space, where the gradient is taken over the 64 effective sublayers.</s><s coords="4,357.53,290.79,183.91,8.12;4,55.44,302.10,447.31,7.77">B: Distribution of the estimated number of rotations each unit performs in this phase space compared to a control in which the layer order was shuffled 1000 times for each unit.</s><s coords="4,505.53,302.10,35.91,7.77;4,55.44,312.77,329.00,8.06">The mean number of rotations over the layers is 10.74 for the RS units and ∼ 0 for the shuffle controls.</s><s coords="4,387.22,312.71,154.21,8.12;4,55.13,324.01,166.90,7.77">C: The number of rotations for each for the 4096 units in the RS and their shuffle controls.</s></p></div></figDesc><graphic coords="4,55.44,67.06,486.03,214.42" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="6,54.94,172.62,486.51,8.12;6,55.44,183.92,486.00,7.77;6,55.44,194.53,487.49,8.12;6,55.44,205.49,438.06,8.12;6,55.44,67.06,486.03,107.21"><head>Figure 3 .</head><label>3</label><figDesc><div><p><s coords="6,54.94,172.62,486.51,8.12;6,55.44,183.92,419.18,7.77">Figure 3. Compressing Autoencoder (CAE) Shows Dynamics of the RS in Reduced Dimensional Space A: The CAE was trained to pass RS vectors at individual pre-attention and pre-MLP sublayers through a bottleneck, and reconstruct the original vector.</s><s coords="6,477.40,183.92,64.05,7.77;6,55.44,194.53,475.39,8.12">Results showing a CAE trained with 10 layers to reduce the dimensionality at the bottleneck to 2. B: Mean trajectory across n = 1000 test data samples.</s><s coords="6,533.61,194.53,9.32,8.06;6,55.44,205.84,206.67,7.77">C: Distance in the reduced space between subsequent layers.</s><s coords="6,264.88,205.49,228.62,8.12">D: Explained variance on the test set as a function of the layers.</s></p></div></figDesc><graphic coords="6,55.44,67.06,486.03,107.21" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,54.94,322.71,486.50,8.12;7,55.14,333.67,486.30,8.12;7,55.44,344.63,486.00,8.12;7,55.22,355.94,487.80,7.77;7,55.44,366.90,463.45,7.77;7,55.44,67.06,486.03,243.13"><head>Figure 4 .</head><label>4</label><figDesc><div><p><s coords="7,54.94,322.71,486.50,8.12;7,55.14,334.02,172.48,7.77">Figure 4. Perturbation of RS trajectories Reveals Self-correcting Dynamics A: Trajectories of n = 1000 individual (black) and mean (colored by layer) data samples in PCA space.</s><s coords="7,231.96,333.67,309.48,8.12;7,55.44,344.98,44.66,7.77">B: Cumulative explained variance of the trajectories as a function of the number of components.</s><s coords="7,102.80,344.63,206.84,8.12">C: Explained variance per layer using 100 PC components.</s><s coords="7,312.34,344.63,229.10,8.12;7,55.22,355.94,318.66,7.77">D: Perturbation analysis in which trajectories were 'teleported' to various points, at various stages in the RS (indicated by layer number above each subplot).</s><s coords="7,376.66,355.94,166.35,7.77">Gray line shows unperturbed control trajectory.</s><s coords="7,55.44,366.90,463.45,7.77">Quiver arrows indicate direction and magnitude of teleported trajectories based on the successive 12 sublayers after teleportation.</s></p></div></figDesc><graphic coords="7,55.44,67.06,486.03,243.13" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,55.13,196.34,236.05,93.99"><head/><label/><figDesc><div><p><s coords="5,112.57,198.01,122.90,8.64;5,235.47,196.34,3.49,6.05;5,242.49,198.01,46.96,8.64;5,55.44,209.96,235.65,8.64;5,55.44,221.92,201.58,8.64">The compressing autoencoder 1 was trained to minimize reconstruction error while learning a lowdimensional representation of activation patterns.</s><s coords="5,261.32,221.92,29.77,8.64;5,55.44,233.88,234.00,8.64;5,55.44,245.51,234.00,8.96;5,55.44,257.47,235.74,9.65">The architecture consists of an encoder and decoder, each with k layers where k is determined by the input dimension d in = 4096 and target bottleneck dimension d bottle = 2.</s><s coords="5,55.13,269.74,234.31,8.64;5,55.44,281.38,194.43,8.96">The dimensions of intermediate layers follow a geometric progression, with each layer i having dimension:</s></p></div></figDesc><table/></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0" coords="5,71.16,689.30,219.77,7.77;5,55.44,699.26,234.31,7.77;5,55.44,709.22,34.61,7.77"><p><s coords="5,71.16,689.30,219.77,7.77;5,55.44,699.26,234.31,7.77;5,55.44,709.22,34.61,7.77">We term this a 'compressing' autoencoder (CAE) to distinguish from Sparse Autoencoders (SAEs) in the interpretability literature.</s></p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="9,55.44,236.59,235.66,8.64;9,65.40,248.54,225.78,8.64;9,65.40,260.32,159.58,8.82" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" coords="9,160.70,248.54,126.74,8.64">Concrete problems in AI safety</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Amodei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Olah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Steinhardt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Christiano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Schulman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Mané</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1606.06565</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schul- man, J., and Mané, D. Concrete problems in AI safety. arXiv preprint arXiv:1606.06565, 2016.</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,283.52,235.66,8.64;9,65.40,295.30,224.04,8.82;9,64.80,307.25,204.47,8.82" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coords="9,276.65,283.52,14.44,8.64;9,65.40,295.47,107.38,8.64">Explaining neural scaling laws</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bahri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Sharma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,180.20,295.30,109.24,8.59;9,64.80,307.25,81.95,8.59">Proceedings of the National Academy of Sciences</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="issue">27</biblScope>
+			<biblScope unit="page">2311878121</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bahri, Y., Dyer, E., Kaplan, J., Lee, J., and Sharma, U. Ex- plaining neural scaling laws. Proceedings of the National Academy of Sciences, 121(27):e2311878121, 2024.</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,330.45,235.65,8.64;9,65.40,342.23,225.28,8.82;9,65.21,354.36,224.78,8.64;9,65.40,366.32,228.22,8.64;9,65.40,379.21,189.29,7.01" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coords="9,193.46,330.45,97.64,8.64;9,65.40,342.41,35.63,8.64">Two views on the cognitive brain</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">L</forename><surname>Barack</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">W</forename><surname>Krakauer</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41583-021-00448-6</idno>
+		<ptr target="https://www.nature.com/articles/s41583-021-00448-6"/>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,108.42,342.23,114.79,8.59">Nature Reviews Neuroscience</title>
+		<idno type="ISSN">1471-003X, 1471-0048</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="359" to="371"/>
+			<date type="published" when="2021-06">June 2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barack, D. L. and Krakauer, J. W. Two views on the cogni- tive brain. Nature Reviews Neuroscience, 22(6):359-371, June 2021. ISSN 1471-003X, 1471-0048. doi: 10.1038/ s41583-021-00448-6. URL https://www.nature. com/articles/s41583-021-00448-6.</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,401.29,235.66,8.64;9,65.40,413.25,225.69,8.64;9,65.40,425.20,224.04,8.64;9,65.40,436.98,225.69,8.82;9,65.40,449.12,224.04,8.64;9,65.40,461.07,33.47,8.64" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coords="9,160.86,425.20,128.58,8.64;9,65.40,437.16,54.81,8.64">Managing extreme AI risks amid rapid progress</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Abbeel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Darrell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">N</forename><surname>Harari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y.-Q</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Shalev-Shwartz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,127.81,436.98,28.60,8.59">Science</title>
+		<imprint>
+			<biblScope unit="volume">384</biblScope>
+			<biblScope unit="issue">6698</biblScope>
+			<biblScope unit="page" from="842" to="845"/>
+			<date type="published" when="2024">2024</date>
+			<publisher>American Association for the Advancement of Science</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bengio, Y., Hinton, G., Yao, A., Song, D., Abbeel, P., Dar- rell, T., Harari, Y. N., Zhang, Y.-Q., Xue, L., Shalev- Shwartz, S., and others. Managing extreme AI risks amid rapid progress. Science, 384(6698):842-845, 2024. Pub- lisher: American Association for the Advancement of Science.</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,484.09,235.25,8.64;9,65.04,496.05,225.64,8.64;9,65.04,508.00,224.39,8.64;9,65.40,519.78,224.04,8.82;9,65.07,531.73,100.00,8.82" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coords="9,126.13,508.00,163.30,8.64;9,65.40,519.96,166.15,8.64">Towards monosemanticity: Decomposing language models with dictionary learning</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Bricken</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Templeton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Batson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Jermyn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Conerly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Anil</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Denison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Askell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,239.06,519.78,50.38,8.59;9,65.07,531.73,60.72,8.59">Transformer Circuits Thread</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bricken, T., Templeton, A., Batson, J., Chen, B., Jermyn, A., Conerly, T., Turner, N., Anil, C., Denison, C., Askell, A., and others. Towards monosemanticity: Decomposing language models with dictionary learning. Transformer Circuits Thread, 2, 2023.</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,554.93,235.25,8.64;9,65.40,566.89,225.69,8.64;9,65.40,578.85,228.22,8.64;9,65.10,590.80,153.31,8.64" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coords="9,80.50,566.89,186.18,8.64">A mathematical perspective on Transformers</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Geshkovski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Letrouit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Polyanskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Rigollet</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2312.10794</idno>
+		<ptr target="http://arxiv.org/abs/2312.10794"/>
+	</analytic>
+	<monogr>
+		<title level="m" coords="9,275.30,566.89,15.80,8.64;9,65.40,578.85,38.51,8.64">August 2024</title>
+		<imprint/>
+	</monogr>
+	<note>cs, math</note>
+	<note type="raw_reference">Geshkovski, B., Letrouit, C., Polyanskiy, Y., and Rigollet, P. A mathematical perspective on Transformers, Au- gust 2024. URL http://arxiv.org/abs/2312. 10794. arXiv:2312.10794 [cs, math].</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,613.82,234.00,8.64;9,65.40,625.60,225.28,8.82;9,65.40,637.73,22.42,8.64" xml:id="b6">
+	<monogr>
+		<title level="m" type="main" coords="9,188.97,613.82,100.47,8.64;9,65.40,625.78,76.21,8.64">How to use and interpret activation patching</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Heimersheim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Nanda</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2404.15255</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Heimersheim, S. and Nanda, N. How to use and interpret activation patching. arXiv preprint arXiv:2404.15255, 2024.</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,660.75,234.00,8.64;9,65.40,672.71,224.04,8.64;9,65.40,684.66,225.69,8.64;9,65.40,696.62,225.23,8.64;9,65.40,708.58,182.21,8.64" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" coords="9,195.98,660.75,93.45,8.64;9,65.40,672.71,224.04,8.64;9,65.40,684.66,225.69,8.64;9,65.40,696.62,22.34,8.64">Large language models implicitly learn to straighten neural sentence trajectories to construct a predictive representation of natural language</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">A</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Fedorenko</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2311.04930</idno>
+		<ptr target="http://arxiv.org/abs/2311.04930"/>
+		<imprint>
+			<date type="published" when="2023-11">November 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hosseini, E. A. and Fedorenko, E. Large language models implicitly learn to straighten neural sentence trajectories to construct a predictive representation of natural lan- guage, November 2023. URL http://arxiv.org/ abs/2311.04930. arXiv:2311.04930 [cs].</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,70.54,235.74,8.64;9,317.40,82.49,224.39,8.64;9,317.40,94.27,223.61,8.82" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coords="9,317.40,82.49,224.39,8.64;9,317.40,94.45,77.30,8.64">Discrete attractor dynamics underlies persistent activity in the frontal cortex</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">K</forename><surname>Inagaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Fontolan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Romani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Svoboda</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,402.18,94.27,25.54,8.59">Nature</title>
+		<imprint>
+			<biblScope unit="volume">566</biblScope>
+			<biblScope unit="issue">7743</biblScope>
+			<biblScope unit="page" from="212" to="217"/>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Inagaki, H. K., Fontolan, L., Romani, S., and Svoboda, K. Discrete attractor dynamics underlies persistent activity in the frontal cortex. Nature, 566(7743):212-217, 2019.</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,115.21,235.25,8.64;9,317.40,127.17,224.04,8.64;9,317.04,139.12,225.59,8.64;9,317.40,151.08,224.04,8.64" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" coords="9,387.42,127.17,154.02,8.64;9,317.04,139.12,105.00,8.64">Interpreting Attention Layer Outputs with Sparse Autoencoders</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Kissane</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Krzyzanowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">I</forename><surname>Bloom</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Conmy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Nanda</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2406.17759</idno>
+		<ptr target="http://arxiv.org/abs/2406.17759"/>
+		<imprint>
+			<date type="published" when="2024-06">June 2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kissane, C., Krzyzanowski, R., Bloom, J. I., Conmy, A., and Nanda, N. Interpreting Attention Layer Outputs with Sparse Autoencoders, June 2024. URL http:// arxiv.org/abs/2406.17759. arXiv:2406.17759</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,183.80,235.74,8.64;9,317.40,195.75,225.69,8.64;9,317.40,207.71,228.22,8.64;9,317.40,219.66,128.41,8.64" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coords="9,317.40,195.75,202.40,8.64">Residual Stream Analysis with Multi-Layer SAEs</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Lawson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Farnik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Houghton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Aitchison</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2409.04185</idno>
+		<ptr target="http://arxiv.org/abs/2409.04185"/>
+	</analytic>
+	<monogr>
+		<title level="m" coords="9,527.87,195.75,15.23,8.64;9,317.40,207.71,41.69,8.64">October 2024</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">Lawson, T., Farnik, L., Houghton, C., and Aitchison, L. Residual Stream Analysis with Multi-Layer SAEs, Oc- tober 2024. URL http://arxiv.org/abs/2409. 04185. arXiv:2409.04185 [cs].</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,240.25,234.00,8.82;9,317.40,252.21,176.54,8.82" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coords="9,366.69,240.43,124.89,8.64">Deterministic nonperiodic flow</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">N</forename><surname>Lorenz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,499.54,240.25,41.90,8.59;9,317.40,252.21,83.46,8.59">Journal of atmospheric sciences</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="130" to="141"/>
+			<date type="published" when="1963">1963</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lorenz, E. N. Deterministic nonperiodic flow. Journal of atmospheric sciences, 20(2):130-141, 1963.</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,273.15,235.25,8.64;9,317.40,285.11,224.20,8.64;9,317.40,297.06,225.28,8.64;9,317.21,309.02,228.41,8.64;9,317.40,320.97,147.23,8.64" xml:id="b12">
+	<monogr>
+		<title level="m" type="main" coords="9,373.96,285.11,167.65,8.64;9,317.40,297.06,220.54,8.64">Understanding and Improving Transformer From a Multi-Particle Dynamic System Point of View</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T.-Y</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1906.02762</idno>
+		<ptr target="http://arxiv.org/abs/1906.02762"/>
+		<imprint>
+			<date type="published" when="2019-06">June 2019</date>
+		</imprint>
+	</monogr>
+	<note>cs, stat</note>
+	<note type="raw_reference">Lu, Y., Li, Z., He, D., Sun, Z., Dong, B., Qin, T., Wang, L., and Liu, T.-Y. Understanding and Improving Transformer From a Multi-Particle Dynamic System Point of View, June 2019. URL http://arxiv.org/abs/1906. 02762. arXiv:1906.02762 [cs, stat].</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,341.74,235.65,8.64;9,317.40,353.69,224.04,8.64;9,317.40,365.65,225.69,8.64;9,317.40,377.60,228.22,8.64;9,317.40,389.56,188.69,8.64" xml:id="b13">
+	<monogr>
+		<title level="m" type="main" coords="9,419.45,353.69,121.99,8.64;9,317.40,365.65,225.69,8.64;9,317.40,377.60,50.38,8.64">Reverse engineering recurrent networks for sentiment classification reveals line attractor dynamics</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Maheswaranathan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">D</forename><surname>Golub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ganguli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Sussillo</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1906.10720</idno>
+		<ptr target="http://arxiv.org/abs/1906.10720"/>
+		<imprint>
+			<date type="published" when="2019-12">December 2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Maheswaranathan, N., Williams, A., Golub, M. D., Gan- guli, S., and Sussillo, D. Reverse engineering recurrent networks for sentiment classification reveals line attrac- tor dynamics, December 2019. URL http://arxiv. org/abs/1906.10720. arXiv:1906.10720.</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,410.32,234.34,8.64;9,317.40,422.10,225.29,8.82;9,317.40,434.23,103.84,8.64" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" coords="9,442.02,410.32,99.77,8.64;9,317.40,422.28,22.88,8.64">Sparse coding of sensory inputs</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">A</forename><surname>Olshausen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Field</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,347.68,422.10,126.96,8.59">Current opinion in neurobiology</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="481" to="487"/>
+			<date type="published" when="2004">2004</date>
+			<publisher>Elsevier</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Olshausen, B. A. and Field, D. J. Sparse coding of sensory inputs. Current opinion in neurobiology, 14(4):481-487, 2004. Publisher: Elsevier.</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,455.00,235.66,8.64;9,317.40,466.95,224.04,8.64;9,317.40,478.73,225.69,8.82;9,317.40,490.68,224.03,8.82;9,317.04,502.82,49.53,8.64" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coords="9,448.79,455.00,94.31,8.64;9,317.40,466.95,224.04,8.64;9,317.40,478.91,168.18,8.64">Locating object knowledge in the brain: Comment on Bowers's (2009) attempt to revive the grandmother cell hypothesis</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">C</forename><surname>Plaut</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Mcclelland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,494.80,478.73,48.29,8.59;9,317.40,490.68,42.54,8.59">Psychological Review</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<publisher>American Psychological Association</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Plaut, D. C. and McClelland, J. L. Locating object knowl- edge in the brain: Comment on Bowers's (2009) attempt to revive the grandmother cell hypothesis. Psychologi- cal Review, 2010. Publisher: American Psychological Association.</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,523.58,235.65,8.64;9,317.40,535.54,225.69,8.64;9,317.40,547.31,225.28,8.82;9,317.40,559.45,225.69,8.64;9,317.05,571.40,226.13,8.64;9,317.40,583.36,225.23,8.64;9,317.10,596.25,213.20,7.01" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coords="9,524.67,523.58,18.42,8.64;9,317.40,535.54,225.69,8.64;9,317.40,547.49,69.35,8.64">Cortical Control of Arm Movements: A Dynamical Systems Perspective</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">V</forename><surname>Shenoy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Sahani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">M</forename><surname>Churchland</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-neuro-062111-150509</idno>
+		<ptr target="https://www.annualreviews.org/doi/10.1146/annurev-neuro-062111-150509"/>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,403.23,547.31,135.03,8.59">Annual Review of Neuroscience</title>
+		<idno type="ISSN">0147-006X, 1545- 4126</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="337" to="359"/>
+			<date type="published" when="2013-07">July 2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shenoy, K. V., Sahani, M., and Churchland, M. M. Cor- tical Control of Arm Movements: A Dynamical Sys- tems Perspective. Annual Review of Neuroscience, 36(1):337-359, July 2013. ISSN 0147-006X, 1545- 4126. doi: 10.1146/annurev-neuro-062111-150509. URL https://www.annualreviews.org/doi/ 10.1146/annurev-neuro-062111-150509.</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,616.08,234.00,8.64;9,317.40,628.03,224.04,8.64;9,317.40,639.99,224.04,8.64;9,317.40,651.94,228.22,8.64;9,317.40,663.90,206.12,8.64" xml:id="b17">
+	<monogr>
+		<title level="m" type="main" coords="9,374.91,628.03,166.53,8.64;9,317.40,639.99,224.04,8.64;9,317.40,651.94,73.66,8.64">What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Moskovitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C Y</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Saxe</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2404.07129</idno>
+		<ptr target="cs"/>
+		<imprint>
+			<date type="published" when="2024-04">April 2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Singh, A. K., Moskovitz, T., Hill, F., Chan, S. C. Y., and Saxe, A. M. What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation, April 2024. URL http://arxiv. org/abs/2404.07129. arXiv:2404.07129 [cs.</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,684.66,235.25,8.64;9,317.40,696.62,25.43,8.64;9,360.76,696.62,180.68,8.64;9,317.40,708.58,43.75,8.64;9,378.85,708.40,162.59,8.82;10,65.07,70.54,226.02,8.64;10,65.05,82.49,226.13,8.64;10,65.40,94.45,225.23,8.64;10,65.10,107.34,213.20,7.01" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coords="9,360.76,696.62,180.68,8.64;9,317.40,708.58,38.89,8.64">Computation Through Neural Population Dynamics</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Vyas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">D</forename><surname>Golub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Sussillo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">V</forename><surname>Shenoy</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-neuro-092619-094115</idno>
+		<ptr target="https://www.annualreviews.org/doi/10.1146/annurev-neuro-092619-094115"/>
+	</analytic>
+	<monogr>
+		<title level="j" coords="9,378.85,708.40,140.00,8.59">Annual Review of Neuroscience</title>
+		<idno type="ISSN">0147-006X, 1545- 4126</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="249" to="275"/>
+			<date type="published" when="2020-07">July 2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vyas, S., Golub, M. D., Sussillo, D., and Shenoy, K. V. Computation Through Neural Population Dynamics. Annual Review of Neuroscience, 43 (1):249-275, July 2020. ISSN 0147-006X, 1545- 4126. doi: 10.1146/annurev-neuro-092619-094115. URL https://www.annualreviews.org/doi/ 10.1146/annurev-neuro-092619-094115.</note>
+</biblStruct>
+
+<biblStruct coords="10,55.44,126.33,235.66,8.64;10,65.40,138.28,225.28,8.64;10,65.21,150.24,228.41,8.64;10,65.10,162.19,128.41,8.64" xml:id="b19">
+	<monogr>
+		<title level="m" type="main" coords="10,205.38,126.33,85.72,8.64;10,65.40,138.28,220.96,8.64">Relational Composition in Neural Networks: A Survey and Call to Action</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wattenberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">B</forename><surname>Viégas</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2407.14662</idno>
+		<ptr target="http://arxiv.org/abs/2407.14662"/>
+		<imprint>
+			<date type="published" when="2024-07">July 2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wattenberg, M. and Viégas, F. B. Relational Composi- tion in Neural Networks: A Survey and Call to Action, July 2024. URL http://arxiv.org/abs/2407. 14662. arXiv:2407.14662 [cs].</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

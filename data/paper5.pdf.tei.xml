@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coords="1,81.06,79.85,432.64,12.90">A Study on Leveraging Search and Self-Feedback for Agent Reasoning</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,198.63,111.68,73.62,10.75"><forename type="first">Michelle</forename><surname>Yuan</surname></persName>
+							<affiliation key="aff0" coords="1,177.45,140.04,245.10,10.37">
+								<note type="raw_affiliation"><label>1</label> Department of Computer Science , Duke University</note>
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">Duke University</orgName>
+							</affiliation>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,282.96,111.68,90.55,10.75"><forename type="first">Elman</forename><surname>Mansimov</surname></persName>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,384.21,111.68,103.15,10.75"><forename type="first">Katerina</forename><surname>Margatina</surname></persName>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,76.13,125.63,74.72,10.75"><forename type="first">Anurag</forename><surname>Pratik</surname></persName>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,161.56,125.63,100.64,10.75"><forename type="first">Daniele</forename><surname>Bonadiman</surname></persName>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,272.91,125.63,85.36,10.75"><forename type="first">Monica</forename><surname>Sunkara</surname></persName>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,368.98,125.63,47.72,10.75"><forename type="first">Yi</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,427.41,125.63,87.00,10.75"><forename type="first">Yassine</forename><surname>Benajiba</surname></persName>
+							<affiliation key="aff1" coords="1,245.70,153.99,108.60,10.37">
+								<note type="raw_affiliation"><label>2</label> Amazon Web Services</note>
+								<orgName type="institution">Amazon Web Services</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coords="1,81.06,79.85,432.64,12.90">A Study on Leveraging Search and Self-Feedback for Agent Reasoning</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">FEE16F30D472E0F1FDAB51A54F6E7214</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1" ident="GROBID" when="2025-02-18T10:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p><s coords="1,87.87,247.63,185.90,8.64;1,87.87,259.58,185.90,8.64;1,87.87,271.54,185.90,8.64;1,87.87,283.49,53.50,8.64">Recent works have demonstrated that incorporating search during inference can significantly improve reasoning capabilities of language agents.</s><s coords="1,144.46,283.49,127.67,8.64;1,87.87,295.45,185.90,8.64;1,87.87,307.40,63.68,8.64">Some approaches may make use of the ground truth or rely on model's own generated feedback.</s><s coords="1,154.53,307.40,117.60,8.64;1,87.87,319.36,185.90,8.64;1,87.87,331.31,184.25,8.64;1,87.63,343.27,99.18,8.64">The search algorithm uses this feedback to then produce values that will update its criterion for exploring and exploiting various reasoning paths.</s><s coords="1,191.43,343.27,82.35,8.64;1,87.63,355.22,184.75,8.64;1,87.87,367.18,146.39,8.64">In this study, we investigate how search and model's self-feedback can be leveraged for reasoning tasks.</s><s coords="1,237.35,367.18,34.77,8.64;1,87.87,379.13,184.50,8.64;1,87.87,391.09,185.90,8.64;1,87.87,403.04,29.64,8.64">First, we explore differences in ground-truth feedback and self-feedback during search for math reasoning.</s><s coords="1,120.82,403.04,152.96,8.64;1,87.87,415.00,184.25,8.64;1,87.87,426.96,185.90,8.64;1,87.87,438.91,131.18,8.64">Second, we observe limitations in applying search techniques to more complex tasks like tool-calling and design domain-specific approaches to address these gaps.</s><s coords="1,225.68,438.91,48.10,8.64;1,87.87,450.87,185.90,8.64;1,87.87,462.82,185.90,8.64;1,87.87,474.78,44.22,8.64">Our experiments reveal challenges related to generalization when solely relying on self-feedback during search.</s><s coords="1,135.96,474.78,137.82,8.64;1,87.87,486.73,184.42,8.64;1,87.87,498.69,185.91,8.64;1,87.87,510.64,108.74,8.64">For search to work effectively, either access to the ground-truth is needed or feedback mechanisms need to be carefully designed for the specific task.</s></p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" coords="1,70.87,534.12,82.81,10.75">Introduction</head><p><s coords="1,70.87,556.91,218.27,9.46;1,70.87,570.46,218.27,9.46;1,70.87,584.01,220.08,9.46;1,70.87,597.56,185.03,9.46">Search algorithms have traditionally relied on ground-truth feedback, particularly in domains like games where win/loss conditions provide clear signals for decision-making <ref type="bibr" coords="1,188.63,597.56,62.48,9.46" target="#b7">(Knuth, 1998)</ref>.</s><s coords="1,263.79,597.56,25.35,9.46;1,70.87,611.11,218.27,9.46;1,70.87,624.66,220.08,9.46;1,70.87,638.20,219.63,9.46;1,70.87,651.75,28.23,9.46">Some recent works have shown potential in incorporating search during model inference to improve reasoning <ref type="bibr" coords="1,86.68,638.20,72.96,9.46" target="#b4">(Hao et al., 2023;</ref><ref type="bibr" coords="1,161.79,638.20,74.15,9.46" target="#b17">Zhou et al., 2023;</ref><ref type="bibr" coords="1,238.09,638.20,52.41,9.46;1,70.87,651.75,23.53,9.46" target="#b14">Zhang et al., 2024)</ref>.</s><s coords="1,102.50,651.75,188.45,9.46;1,70.87,665.30,220.17,9.46">Typically, the search process requires feedback on the correctness of the candidate solutions.</s><s coords="1,70.35,678.85,220.60,9.46;1,70.87,692.40,218.27,9.46;1,70.87,705.95,220.08,9.46;1,70.87,719.50,48.19,9.46">While such feedback traditionally came from external verification, these recent works have explored using the model's own assessment as feedback during search.</s><s coords="1,122.56,719.50,166.57,9.46;1,70.87,733.05,220.08,9.46;1,70.87,746.60,219.17,9.46;1,83.52,766.45,116.51,8.32;1,306.14,223.76,84.37,9.46">The use of self-feedback is motivated by emerging evidence of agent's capability for selfcorrection and self-refinement <ref type="bibr" coords="1,206.28,746.60,83.76,9.46" target="#b12">(Weng et al., 2023;</ref><ref type="bibr" coords=""/> * Work done as an intern at AWS <ref type="bibr" coords="1,306.14,223.76,79.58,9.46" target="#b0">Chen et al., 2025)</ref>.</s><s coords="1,396.23,223.76,128.56,9.46;1,306.14,237.31,218.27,9.46;1,306.14,250.86,218.26,9.46;1,306.14,264.41,218.27,9.46;1,306.14,277.96,219.63,9.46;1,306.14,291.51,28.18,9.46">This direction is particularly exciting as it suggests the potential for models to guide their own search process and evolve without relying on external verification, moving us closer to more generalized, autonomous agents <ref type="bibr" coords="1,473.20,277.96,52.56,9.46;1,306.14,291.51,23.48,9.46" target="#b9">(Putta et al., 2024)</ref>.</s></p><p><s coords="1,317.05,305.06,209.17,9.46;1,306.14,318.61,218.27,9.46;1,306.14,332.16,218.27,9.46;1,306.14,345.71,38.24,9.46">However, when implementing search for reasoning, a critical question emerges: how valuable is the model's own feedback in guiding the search process?</s><s coords="1,347.75,345.71,176.65,9.46;1,306.14,359.26,218.65,9.46;1,306.14,372.81,218.27,9.46;1,306.14,386.36,97.45,9.46">While models may be capable judges in some scenarios <ref type="bibr" coords="1,377.40,359.26,87.28,9.46" target="#b15">(Zheng et al., 2023)</ref>, their ability to reliably assess their own outputs during search remains questionable.</s><s coords="1,408.38,386.36,116.41,9.46;1,306.14,399.90,220.08,9.46;1,306.14,413.45,220.18,9.46">This becomes particularly important when ground-truth feedback is unavailable, as is often the case in real-world applications.</s></p><p><s coords="1,317.05,427.00,207.36,9.46;1,306.14,440.55,220.07,9.46;1,306.14,454.10,219.63,9.46;1,305.80,467.65,143.83,9.46">In this study, we investigate this question through two distinct tasks: mathematical reasoning, GSM8K <ref type="bibr" coords="1,364.35,454.10,83.71,9.46" target="#b1">(Cobbe et al., 2021)</ref>, and tool-calling, ToolTalk <ref type="bibr" coords="1,348.53,467.65,96.31,9.46" target="#b2">(Farn and Shin, 2023)</ref>.</s><s coords="1,454.01,467.65,70.40,9.46;1,306.14,481.20,220.08,9.46;1,306.14,494.75,218.27,9.46;1,306.14,508.30,122.44,9.46">Our analysis on GSM8K reveals that while search itself is valuable, using the model's self-feedback to guide the search may not be optimal.</s><s coords="1,433.81,508.30,92.41,9.46;1,306.14,521.85,218.27,9.46;1,306.14,535.40,196.63,9.46">Instead, other strategies, like majority voting across multiple nodes during search, proves to be more effective.</s><s coords="1,509.84,535.40,14.58,9.46;1,306.14,548.95,218.27,9.46;1,306.14,562.49,220.08,9.46;1,306.14,576.04,138.63,9.46">We then extend our investigation to tool-calling, a more complex domain involving strategic decisionmaking and parameter selection.</s><s coords="1,448.10,576.04,76.31,9.46;1,306.14,589.59,220.08,9.46;1,306.14,603.14,43.04,9.46">Here, we find that search with self-feedback can actually degrade performance.</s><s coords="1,352.52,603.14,171.89,9.46;1,306.14,616.69,219.63,9.46;1,306.14,630.24,220.08,9.46;1,306.14,643.79,75.15,9.46">This leads us to explore domain-specific approaches for augmenting feedback mechanisms, including in-content examples and specialized verification modules.</s></p><p><s coords="1,317.05,657.34,207.36,9.46;1,306.14,670.89,219.63,9.46;1,306.14,684.44,218.27,9.46;1,306.14,697.99,149.93,9.46">While the promise of self-improving models through feedback and search remains appealing, the current reality of using self-feedback in search needs to be carefully reconsidered.</s><s coords="1,459.46,697.99,64.95,9.46;1,306.14,711.54,218.27,9.46;1,306.14,725.09,218.26,9.46;1,306.14,738.63,220.08,9.46;1,306.14,752.18,32.46,9.46">This highlights a gap between models' previously demonstrated self-correction capabilities in some scenarios and their reliability in guiding search processes for reasoning.</s><s coords="1,343.87,752.18,180.54,9.46;1,306.14,765.73,220.08,9.46;2,70.87,74.72,220.07,9.46;2,70.87,88.27,218.27,9.46;2,70.87,101.82,124.24,9.46">Overall, this suggests the need for more engineered feedback mechanisms tailored to spe-cific tasks <ref type="bibr" coords="2,119.51,74.72,90.58,9.46" target="#b16">(Zheng et al., 2025)</ref> or alternative approaches for leveraging self-feedback outside of search <ref type="bibr" coords="2,103.85,101.82,86.46,9.46" target="#b0">(Chen et al., 2025)</ref>.</s><s coords="2,203.99,101.82,85.15,9.46;2,70.87,115.37,218.27,9.46;2,70.87,128.92,220.08,9.46;2,70.87,142.47,209.03,9.46">These findings are aligned with recent generative AI breakthroughs that also mention the limitations of search and selffeedback for agent reasoning <ref type="bibr" coords="2,199.91,142.47,75.29,9.46" target="#b3">(Guo et al., 2025)</ref>.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" coords="2,70.87,166.12,89.09,10.75">Related Work</head><p><s coords="2,70.87,188.92,218.27,9.46;2,70.87,202.46,218.27,9.46;2,70.87,216.01,137.51,9.46">Recent research has extensively explored methods to enhance LLM performance through advanced test-time compute approaches.</s><s coords="2,214.71,216.01,75.15,9.46;2,70.87,229.56,220.08,9.46;2,70.87,243.11,220.08,9.46;2,70.87,256.66,220.07,9.46;2,70.87,270.21,131.55,9.46"><ref type="bibr" coords="2,214.71,216.01,75.15,9.46" target="#b13">Wu et al. (2024)</ref> investigates scaling behaviors of sampling strategies, while <ref type="bibr" coords="2,123.69,243.11,117.70,9.46" target="#b8">Muennighoff et al. (2025)</ref> show positive results with a simple test-time scaling approach called budget forcing.</s><s coords="2,207.32,270.21,83.62,9.46;2,70.87,283.76,218.27,9.46;2,70.87,297.31,136.81,9.46">Recent work highlight emerging potential for self-feedback <ref type="bibr" coords="2,259.73,283.76,29.41,9.46;2,70.87,297.31,52.28,9.46" target="#b12">(Weng et al., 2023;</ref><ref type="bibr" coords="2,125.86,297.31,77.03,9.46" target="#b0">Chen et al., 2025)</ref>.</s><s coords="2,211.05,297.31,78.08,9.46;2,70.87,310.86,218.27,9.46;2,70.87,324.41,219.17,9.46;2,70.87,337.96,119.38,9.46">Likewise, there is also critique on whether models can truly evaluate and correct their own outputs <ref type="bibr" coords="2,200.16,324.41,89.87,9.46" target="#b11">(Stechly et al., 2024;</ref><ref type="bibr" coords="2,70.87,337.96,114.68,9.46" target="#b6">Kambhampati et al., 2024)</ref>.</s></p><p><s coords="2,81.78,351.80,207.54,9.46;2,70.47,365.35,218.66,9.46;2,70.51,378.90,218.63,9.46;2,70.87,392.45,219.17,9.46;2,70.87,406.00,85.42,9.46">Beyond sampling and iterative refinement, other works propose using Monte Carlo Tree Search (MCTS) as a more structured approach to improve reasoning <ref type="bibr" coords="2,118.66,392.45,82.80,9.46" target="#b4">(Hao et al., 2023;</ref><ref type="bibr" coords="2,205.98,392.45,84.06,9.46" target="#b17">Zhou et al., 2023;</ref><ref type="bibr" coords="2,70.87,406.00,80.72,9.46" target="#b14">Zhang et al., 2024)</ref>.</s><s coords="2,159.67,406.00,129.47,9.46;2,70.87,419.55,220.07,9.46;2,70.87,432.75,154.80,9.81">MCTS can explore the search space effectively, trading off exploration and exploitation using the U CT criterion:</s></p><formula xml:id="formula_0" coords="2,81.81,461.08,208.06,24.43">U CT (a) = Q(s, a) + w log N (s) log N (c(s, a))<label>(1)</label></formula><p><s coords="2,70.47,502.15,218.66,9.81;2,70.87,515.70,53.75,9.81">where Q(s, a) is the Q-value of taking an action a from node s.</s><s coords="2,127.82,515.70,161.32,9.81;2,70.59,529.25,220.45,9.81">N (s) and N (c(s, a)) is the number of visits to node s and its children, c(s, a) respectively.</s><s coords="2,70.87,543.15,218.66,9.46;2,70.87,556.70,218.27,9.46;2,70.87,570.25,218.27,9.46;2,70.47,583.80,220.57,9.46">In expansion and simulation (rollouts) stages, a new node is created and the Q-value, corresponding to the action that created the node, is initialized with rewards and updated during backpropagation.</s><s coords="2,70.53,597.34,218.61,9.46;2,70.87,610.89,218.45,9.46;2,70.87,624.44,135.75,9.46">These rewards will be based on some source of feedback, whether it is from the ground-truth or another source of verification.</s><s coords="2,212.58,624.44,76.93,9.46;2,70.87,637.99,218.27,9.46;2,70.87,651.54,55.34,9.46">Thus, the quality of this feedback is crucial for search to operate successfully.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3" coords="2,70.87,675.19,218.60,10.75">Search without Ground-truth Feedback</head><p><s coords="2,73.59,697.99,215.55,9.46;2,70.87,711.54,218.27,9.46;2,70.87,725.09,40.49,9.46">In this section, we explore the use of the model's own feedback for search on math reasoning dataset GSM8K.</s><s coords="2,115.36,725.09,173.77,9.46;2,70.87,738.63,218.27,9.46;2,70.87,751.83,218.54,9.81;2,70.87,765.73,108.18,9.46">We build on the MCTSr (MCTS with Self-Refine) framework <ref type="bibr" coords="2,174.31,738.63,81.67,9.46" target="#b14">(Zhang et al., 2024)</ref>, which computes Q value based on the model's feedback of its generated solution.</s><s coords="2,182.44,765.73,106.88,9.46;2,306.14,74.72,218.27,9.46;2,306.14,88.27,220.07,9.46;2,306.14,101.82,66.70,9.46">One caveat with MCTSr is that the method originally assumes access to ground-truth feedback for early stopping and answer selection.</s><s coords="2,378.07,101.82,146.61,9.46;2,306.14,115.37,201.43,9.46">Access to ground-truth feedback is appropriate for games like chess and Go.</s><s coords="2,515.15,115.37,9.27,9.46;2,306.14,128.92,218.27,9.46;2,306.14,142.47,102.88,9.46">In other scenarios, there may be a lack of access to ground-truth feedback.</s><s coords="2,415.31,142.47,110.62,9.46;2,306.14,156.02,218.45,9.46;2,306.14,169.57,185.05,9.46">This raises the question: Can we still leverage the model's self-feedback or other signals to guide search effectively?</s><s coords="2,496.99,169.57,29.23,9.46;2,306.14,183.12,218.45,9.46;2,306.14,196.67,218.27,9.46;2,306.14,210.22,165.10,9.46">To address this, we investigate alternative strategies for answer selection and evaluate their performance in the absence of ground-truth feedback.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" coords="2,306.14,232.54,117.58,9.81">Experimental Setup</head><p><s coords="2,305.63,250.65,220.15,9.46;2,305.75,264.20,220.48,9.46;2,306.14,277.75,220.08,9.46;2,306.14,291.30,66.89,9.46">We evaluate our approaches on the GSM8K dataset, which has become a standard benchmark for assessing mathematical reasoning capabilities in language models.</s><s coords="2,384.38,291.30,140.04,9.46;2,306.14,304.85,219.63,9.46;2,306.14,318.40,218.27,9.46;2,305.78,331.95,192.71,9.46">Our experiments involve both closed-source and open-source language models, including Llama 3 Instruct (70B), Mistral v0.3 (7B), Claude 3 Haiku, and Claude 3 Sonnet.</s></p><p><s coords="2,317.05,345.60,209.17,9.46;2,306.14,359.15,218.65,9.46;2,306.14,372.70,90.52,9.46">For each model, we first establish a baseline performance through direct generation without any search mechanisms.</s><s coords="2,404.81,372.70,119.61,9.46;2,306.14,386.25,220.07,9.46;2,306.14,399.80,218.27,9.46;2,306.14,413.35,220.18,9.46">We then run MCTSr with ground-truth verification to establish an upperbound on performance, representing the best-case scenario where ground-truth feedback is available.</s><s coords="2,306.14,426.90,218.27,9.46;2,306.14,440.45,219.78,9.46;2,305.32,453.57,219.08,9.88;2,306.14,467.55,178.45,9.46">Finally, we run MCTS using our proposed selection strategies that do not require ground-truth feedback: 1) Random selection: A node from the search tree is chosen at random as the final answer.</s><s coords="2,489.12,467.55,37.10,9.46;2,306.14,481.09,220.07,9.46;2,306.14,494.64,220.18,9.46">This approach serves as a baseline to measure the effectiveness of more sophisticated selection methods.</s></p><p><s coords="2,306.14,507.77,218.26,9.88;2,306.14,521.74,218.27,9.46;2,306.14,535.29,172.85,9.46">2) Majority voting: We group the final numerical answers from all nodes in the search tree and select the answer that appears most frequently.</s><s coords="2,482.39,535.29,43.84,9.46;2,306.14,548.84,218.27,9.46;2,306.14,562.39,220.18,9.46">This strategy aggregates the model's predictions, assuming that the most common answer is likely to be correct.</s></p><p><s coords="2,306.14,575.51,218.27,9.88;2,306.14,589.49,218.26,9.46;2,306.14,603.04,32.38,9.46">3) Maximum reward: The node with the highest self-feedback reward score is selected as the final answer.</s><s coords="2,341.93,603.04,182.86,9.46;2,306.14,616.59,218.45,9.46;2,306.14,630.14,190.46,9.46">This approach relies on the model's ability to evaluate its own solutions, assuming that higher reward scores correspond to better answers.</s></p><p><s coords="2,317.05,643.79,207.36,9.46;2,306.14,657.34,218.27,9.46;2,306.14,670.89,205.56,9.46">For the proposed selection strategies, we do not perform any early stopping and instead conduct search for a maximum of 10 MCTS iterations.</s><s coords="2,515.15,670.89,9.27,9.46;2,305.80,684.44,218.61,9.46;2,306.14,697.99,220.08,9.46;2,306.14,711.54,220.07,9.46;2,306.14,725.09,61.53,9.46">In Table <ref type="table" coords="2,333.34,684.44,4.17,9.46">1</ref>, we report the accuracy on GSM8K with no-search baseline, MCTSr with access to groundtruth feedback, and the proposed alternatives discussed above.</s><s coords="2,371.43,725.09,152.99,9.46;2,306.14,738.63,218.27,9.46;2,306.14,752.18,218.65,9.46;2,305.87,765.73,30.39,9.46">In Appendix A, we report detailed results along with other aggregation strategies like based on average rewards or weighted majority voting.</s><s coords="3,70.87,217.19,453.54,8.96;3,70.62,229.46,105.53,8.64">there is at least ≈ 10% improvement in accuracy using the original MCTSr implementation with ground-truth verification over no search.</s><s coords="3,179.19,229.46,345.22,8.64;3,70.87,241.41,404.40,8.64">However, without access to ground-truth feedback, the most promising alternative seems to be majority voting rather than picking the answer with maximum reward given from self-feedback.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" coords="3,70.87,274.84,63.95,9.81">Analysis</head><p><s coords="3,70.87,294.82,218.27,9.46;3,70.87,308.37,220.17,9.46">In Table <ref type="table" coords="3,110.12,294.82,4.17,9.46">1</ref>, ground-truth verification plays a huge role in the observed performance improvement.</s><s coords="3,70.47,321.57,220.47,9.81;3,70.87,335.47,220.07,9.46;3,70.87,349.02,218.45,9.46;3,70.87,362.57,45.91,9.46">Across all models, there is at least ≈ 10% improvement in accuracy using the original MCTSr implementation with ground-truth verification over no search.</s><s coords="3,122.73,362.57,166.79,9.46;3,70.87,376.12,218.27,9.46;3,70.87,389.66,218.65,9.46;3,70.87,403.21,173.95,9.46">Within the strategies that do not rely on ground-truth feedback, majority voting seems to be the only selection strategy that consistently improves over the no-search baseline.</s><s coords="3,253.02,403.21,37.92,9.46;3,70.87,416.76,218.27,9.46;3,70.87,430.31,220.07,9.46;3,70.87,443.86,113.48,9.46">Rewardbased and random selection strategies seems to slightly improve the performance for some models and worsen for others.</s><s coords="3,187.72,443.86,103.22,9.46;3,70.87,457.41,218.26,9.46;3,70.87,470.96,175.32,9.46">This indicates that selffeedback may not be a reliable source for providing rewards to select answers during search.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" coords="3,70.87,497.20,191.82,10.75">Search with Augmented Feedback</head><p><s coords="3,70.53,521.85,218.61,9.46;3,70.87,535.40,220.07,9.46;3,70.87,548.95,219.63,9.46;3,70.87,562.49,28.04,9.46">This section explores the application of search to a more complex domain of tool-calling, specifically using the ToolTalk dataset <ref type="bibr" coords="3,219.73,548.95,70.77,9.46;3,70.87,562.49,23.36,9.46" target="#b2">(Farn and Shin, 2023)</ref>.</s><s coords="3,102.28,562.49,186.85,9.46;3,70.87,576.04,220.08,9.46;3,70.87,589.59,218.27,9.46;3,70.87,603.14,85.30,9.46">Unlike math reasoning tasks where there is one answer and verification is relatively straightforward, ToolTalk presents a significantly more nuanced challenge.</s><s coords="3,159.80,603.14,131.15,9.46;3,70.87,616.69,218.45,9.46;3,70.87,630.24,220.08,9.46;3,70.87,643.79,218.26,9.46;3,70.87,657.34,176.98,9.46">The dataset consists of multiturn dialogues where agents must understand user intents, decide when to make tool calls versus asking for clarification, and ensure all tool parameters are grounded in the conversation context.</s><s coords="3,251.24,657.34,38.17,9.46;3,70.87,670.89,218.27,9.46;3,70.47,684.44,218.66,9.46;3,70.87,697.99,218.27,9.46;3,70.87,711.54,41.72,9.46">ToolTalk evaluation is done using teacher forcing, where we condition the conversation history based on the ground-truth conversation and evaluate the agent's response.</s><s coords="3,117.87,711.54,171.27,9.46;3,70.87,725.09,97.42,9.46;3,343.96,396.53,180.62,8.64;3,306.14,408.49,119.28,8.64">Within each turn, there can be zero to multiple tool calls, and We compare using and not using search for tool-calling dataset ToolTalk.</s><s coords="3,429.20,408.49,96.86,8.64;3,306.14,420.44,220.01,8.64">We report precision, recall, and F1 scores, which are averaged across 5 runs.</s></p><p><s coords="3,306.14,432.40,219.92,8.64;3,306.14,444.35,218.26,8.64;3,306.14,456.31,57.46,8.64">For search, we use MCTS with maximum reward aggregation strategy based on self-feedback as described in Section 3.1.</s><s coords="3,366.70,456.31,157.71,8.64;3,305.78,468.26,149.09,8.64">MCTS based on self-feedback seems to worsen the performance on ToolTalk.</s></p><p><s coords="3,306.14,503.77,218.27,9.46;3,306.14,517.31,218.26,9.46;3,306.14,530.86,48.77,9.46">tool is executed with the provided parameters, and the result is given back to the agent for continued generation.</s></p><p><s coords="3,317.05,545.24,209.17,9.46;3,306.14,558.79,218.26,9.46;3,306.14,572.34,43.78,9.46">The complexity of ToolTalk stems from its openended nature and the strategic decisions required at each turn.</s><s coords="3,353.30,572.34,171.11,9.46;3,306.14,585.89,220.08,9.46;3,306.14,599.43,105.97,9.46">Agents must not only understand what tools are available but also determine the appropriate moment to use them.</s><s coords="3,415.49,599.43,110.73,9.46;3,306.14,612.98,218.27,9.46;3,306.14,626.53,218.46,9.46;3,306.14,640.08,218.27,9.46;3,306.14,653.63,111.67,9.46">A successful response often requires maintaining coherence across multiple turns while avoiding a common pitfall: parameter hallucination, where models fabricate plausible but incorrect tool parameters.</s><s coords="3,421.21,653.63,105.01,9.46;3,306.14,667.18,218.26,9.46;3,306.14,680.73,218.26,9.46;3,306.14,694.28,164.65,9.46">This represents a fundamental departure from math reasoning tasks, where the challenge lies primarily in computational logic rather than strategic decision-making.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1" coords="3,306.14,719.09,171.27,9.81">Gaps in Search for Tool Calling</head><p><s coords="3,305.63,738.63,220.69,9.46">We follow the same evaluation setup as ToolTalk.</s><s coords="3,305.63,752.18,218.78,9.46;3,306.14,765.73,104.92,9.46">We compare a no-search baseline against using MCTS with self-refine.</s><s coords="3,416.69,765.73,107.72,9.46;4,70.87,224.26,218.27,9.46;4,70.87,237.81,218.27,9.46;4,70.87,251.36,218.27,9.46;4,70.87,264.91,104.24,9.46">In this setup, each node represents a complete solution generated by the agent with tool-calling functionality, accompanied by its own feedback using a generic system prompt for obtaining feedback.</s><s coords="4,179.75,264.91,111.20,9.46;4,70.87,278.46,218.27,9.46;4,70.87,292.01,220.08,9.46;4,70.59,305.56,74.40,9.46">Note that we do not execute tools during the search process, as some tool executions in real-world scenarios can have irreversible impacts.</s><s coords="4,148.37,305.56,140.76,9.46;4,70.87,319.11,218.27,9.46;4,70.87,332.65,123.53,9.46">After completing the search, we iterate through all nodes in the tree and select the one with the highest reward.</s></p><p><s coords="4,81.78,345.82,207.36,9.88;4,70.87,359.80,141.86,9.46">Analysis: In Table <ref type="table" coords="4,173.66,346.25,4.17,9.46" target="#tab_1">2</ref>, we compare no-search baseline with self-refine search.</s><s coords="4,217.22,359.80,71.91,9.46;4,70.87,373.35,219.63,9.46;4,70.47,386.90,220.48,9.46;4,70.87,400.45,101.19,9.46">We observe that the no-search baseline performs better than search, which indicate that self-refine could be detrimental <ref type="bibr" coords="4,84.07,400.45,83.38,9.46" target="#b5">(Huang et al., 2024)</ref>.</s><s coords="4,175.36,400.45,113.96,9.46;4,70.87,413.99,218.46,9.46;4,70.87,427.54,131.75,9.46">We observe tool parameter hallucination as a major cause of error (please refer to Appendix D for examples).</s><s coords="4,206.01,427.54,83.13,9.46;4,70.87,441.09,220.08,9.46;4,70.87,454.64,218.27,9.46;4,70.87,468.19,218.27,9.46;4,70.87,481.74,218.27,9.46;4,70.87,495.29,168.24,9.46">In particular, when the user asks the agent to perform a task with insufficient information, instead of following up, the agent exhibits a bias towards making premature tool call requests with incomplete or hallucinated tool parameters <ref type="bibr" coords="4,143.85,495.29,90.47,9.46" target="#b10">(Shaikh et al., 2024)</ref>.</s><s coords="4,244.59,495.29,46.36,9.46;4,70.87,508.84,218.27,9.46;4,70.87,522.39,218.27,9.46;4,70.87,535.94,145.08,9.46">For example, when the user asks to register an account, the agent often hallucinates dummy credentials such as "newuser" or "newpassword".</s><s coords="4,219.76,535.94,69.38,9.46;4,70.87,549.49,218.27,9.46;4,70.87,563.04,170.59,9.46">Moreover, even the feedback and reward model does not capture these hallucinations in tool parameters.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2" coords="4,70.87,585.15,218.27,9.81">Augmenting Feedback with More Sources</head><p><s coords="4,70.53,603.14,218.61,9.46;4,70.87,616.27,218.27,9.88;4,70.87,629.81,220.08,9.88;4,70.87,643.79,218.27,9.46;4,70.87,657.34,63.36,9.46">To mitigate poor feedback quality in search, we explore three strategies: 1) Augmentation with Guidelines: We refine the feedback model's system prompt and instruct it to specifically penalize hallucinations.</s><s coords="4,137.63,656.91,153.32,9.81;4,70.87,670.46,220.08,9.88;4,70.87,684.44,220.08,9.46;4,70.87,697.99,218.27,9.46;4,70.87,711.54,220.18,9.46">2) Augmentation with ICL examples: We manually annotate a few in-context examples for the feedback model where these examples illustrate both hallucinated and factual agent responses, along with their appropriate rewards.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="4,70.87,724.66,218.27,9.81">3) Augmentation with Hallucination Detection</head><p><s coords="4,70.87,738.21,220.07,9.88;4,70.87,752.18,159.21,9.46">Module: We augment the feedback with a separate hallucination detection module.</s><s coords="4,233.49,752.18,55.64,9.46;4,70.87,765.73,218.27,9.46;4,306.14,224.26,207.29,9.46">This module iterates through each tool parameter and asks the model if the parameter is provided by the user.</s><s coords="4,517.00,224.26,7.41,9.46;4,306.14,237.81,220.07,9.46;4,306.14,251.36,83.09,9.46">If the answer is no, then it is considered as hallucinated parameter.</s><s coords="4,397.27,251.36,127.14,9.46;4,306.14,264.91,218.26,9.46;4,306.14,278.46,142.22,9.46">After we iterate through all the parameters individually, we aggregate them to form the hallucination decision.</s><s coords="4,452.59,278.46,71.83,9.46;4,306.14,292.01,220.08,9.46;4,306.14,305.56,218.26,9.46;4,306.14,319.11,41.26,9.46">Finally, we pass the agent response along with this hallucination decision to the feedback model to generate an overall feedback.</s><s coords="4,350.71,319.11,173.70,9.46;4,306.14,332.65,146.70,9.46">We report precision, recall and F1 scores for all three strategies (Table <ref type="table" coords="4,440.79,332.65,4.02,9.46">3</ref>).</s><s coords="4,459.02,332.65,65.39,9.46;4,305.75,346.20,145.45,9.46">Please refer to Appendix C for system prompts.</s></p><p><s coords="4,317.05,360.63,207.36,9.88;4,306.14,374.60,218.27,9.46;4,306.14,388.15,159.77,9.46">Analysis: Table <ref type="table" coords="4,395.70,361.05,5.56,9.46">3</ref> shows refining the system prompt is not effective as the results deteriorated compared to generic system prompt.</s><s coords="4,469.29,388.15,56.92,9.46;4,306.14,401.70,220.18,9.46">Including incontext examples helps, especially with precision.</s><s coords="4,306.14,415.25,219.63,9.46;4,306.14,428.80,218.27,9.46;4,306.14,442.35,94.22,9.46">Finally, with the hallucination detection module, precision increases significantly but recall drops significantly as well.</s><s coords="4,407.57,442.35,118.21,9.46;4,305.75,455.90,220.47,9.46;4,306.14,469.45,218.45,9.46;4,306.14,483.00,113.75,9.46">When inspected carefully, we observe less hallucinations but the selected responses are prone to ask user for confirmation or unnecessary information.</s><s coords="4,427.26,483.00,97.15,9.46;4,306.14,496.54,220.08,9.46;4,306.14,510.09,218.27,9.46;4,306.14,523.64,70.15,9.46">For example, when a user asks to delete an account, even if all the required information is present the model asks the user to confirm.</s><s coords="4,379.83,523.64,144.59,9.46;4,306.14,537.19,176.61,9.46">Please refer to Appendix D for a few examples illustration this behaviour.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" coords="4,306.14,564.31,75.07,10.75">Conclusion</head><p><s coords="4,306.14,589.59,220.08,9.46;4,306.14,603.14,185.80,9.46">In this work, we conduct a study on integrating selffeedback into search for agent reasoning.</s><s coords="4,497.22,603.14,27.20,9.46;4,306.14,616.69,220.07,9.46;4,306.14,630.24,218.27,9.46;4,306.14,643.79,218.27,9.46;4,306.14,657.34,174.04,9.46">While search remains a valuable technique for enhancing model performance, our results demonstrate that relying on self-feedback may be suboptimal or even detrimental in certain contexts.</s><s coords="4,484.31,657.34,41.91,9.46;4,306.14,670.89,218.27,9.46;4,306.14,684.44,144.44,9.46">These insights have implications for the development of generalized, autonomous agents.</s><s coords="4,453.96,684.44,72.26,9.46;4,306.14,697.99,220.08,9.46;4,306.14,711.54,218.65,9.46;4,306.14,725.09,220.07,9.46;4,306.14,738.63,220.08,9.46;4,306.14,752.18,220.08,9.46;4,306.14,765.73,20.30,9.46">Rather than pursuing purely self-guided approaches, our work indicates that successful search implementations may require carefully designed, domain-specific feedback mechanisms or hybrid approaches that combine self-refinement with other verification strategies.</s></p><p><s coords="5,70.47,95.72,220.47,9.46;5,70.87,109.27,218.27,9.46;5,70.87,122.82,117.61,9.46">As a short paper, we have limited our scope to specific search methods (MCTS) and domains (math reasoning and tool calling).</s><s coords="5,191.87,122.82,97.27,9.46;5,70.87,136.37,220.08,9.46;5,70.87,149.92,22.71,9.46">This focused approach allows for in-depth analysis within our chosen contexts.</s><s coords="5,96.93,149.92,192.20,9.46;5,70.87,163.47,218.27,9.46;5,70.87,177.02,218.27,9.46;5,70.87,190.57,220.08,9.46;5,70.87,204.12,55.00,9.46">Future research could build on these findings by exploring additional reasoning domains, search algorithms, and datasets, potentially uncovering more patterns in self-feedback across various reasoning tasks.</s><s coords="5,129.16,204.12,159.97,9.46;5,70.87,217.67,218.45,9.46;5,70.87,231.21,51.80,9.46">More exploration can also be done on augmenting self-feedback for search through other approaches.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="6,70.87,73.58,189.62,10.75">A MCTSr Experiments on GSM8K</head><p><s coords="6,70.87,95.64,218.27,9.46;6,70.47,109.19,218.66,9.46;6,70.87,122.73,147.84,9.46">In Table <ref type="table" coords="6,112.11,95.64,4.17,9.46" target="#tab_3">4</ref>, we report results on GSM8k dataset with MCTSr search method with various strategies in place of ground truth feedback.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="6,70.87,145.35,136.96,10.75">B ToolTalk Experiments:</head><p><s coords="6,70.87,167.41,218.27,9.46;6,70.87,180.96,218.27,9.46;6,70.87,194.51,44.64,9.46">In Table <ref type="table" coords="6,113.74,167.41,4.17,9.46">5</ref>, we report results on ToolTalk with MCTS search with no search and various search strategies.</s><s coords="6,119.89,194.51,169.25,9.46;6,70.47,208.06,153.93,9.46">Similarly, in Table <ref type="table" coords="6,205.78,194.51,5.56,9.46" target="#tab_5">6</ref> we report results with DFS search inplace of MCTS.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="6,306.14,73.58,151.68,10.75">C ToolTalk System Prompts</head><p><s coords="6,306.14,95.64,218.27,9.46;6,306.14,109.19,220.07,9.46;6,306.14,122.73,41.50,9.46">Here is the system prompts we used for main LLM that generates answer candidates for all our approaches.</s></p><p><s coords="6,317.05,136.09,207.36,9.40;6,306.14,149.64,218.27,9.40;6,306.14,163.19,96.13,9.40">"You are a helpful assistant who must always use one of the available external tools to successfully accomplish user task.</s><s coords="6,405.84,163.19,118.57,9.40;6,306.14,176.73,218.27,9.40;6,306.14,190.28,219.00,9.40;6,305.48,203.83,51.72,9.40">You are also provided with some special tools to interact with the user, those are: (1) AskUserForInformation (2) FinishTask (3) AbortTask."</s></p><p><s coords="6,317.05,217.58,207.36,9.46;6,306.14,231.13,218.26,9.46;6,306.14,244.68,189.05,9.46">Here is the feedback model's system prompts we used for all our approach except where we instruct the feedback model to catch hallucinations.</s></p><p><s coords="6,317.05,258.03,207.36,9.40;6,306.14,271.58,220.17,9.40">"You are a helpful critic who provides valuable feedback on solutions generated by an LLM agent.</s><s coords="6,305.53,285.13,218.88,9.40;6,306.14,298.68,218.27,9.40;6,306.14,312.23,79.03,9.40">You will be given a weak or incorrect answer, and you should provide me with a feedback to correct this answer better.</s><s coords="6,388.56,312.23,135.85,9.40;6,306.14,325.78,121.13,9.40">Analyze the answer strictly and critic, point out every flaw."</s></p><p><s coords="6,317.05,339.52,207.63,9.46;6,306.14,353.07,220.08,9.46;6,306.14,366.62,13.94,9.46;6,317.05,379.97,207.36,9.40;6,306.14,393.52,220.17,9.40">For our approach, where we ask the feedback model to look for hallucination, we use the following "You are a helpful critic who provides valuable feedback on solutions generated by an LLM agent.</s><s coords="6,305.53,407.07,218.88,9.40;6,306.14,420.62,218.27,9.40;6,306.14,434.17,79.03,9.40">You will be given a weak or incorrect answer, and you should provide me with a feedback to correct this answer better.</s><s coords="6,388.56,434.17,135.85,9.40;6,306.14,447.72,116.60,9.40">Analyze the answer strictly and critic, point out every flaw.</s></p><p><s coords="6,317.05,461.27,209.17,9.40;6,306.14,474.82,220.18,9.40">When evaluating the solutions, pay close attention to Hallucinations and Fabricated Information.</s><s coords="6,305.78,488.37,220.44,9.40;6,306.14,501.92,218.27,9.40;6,306.14,515.46,220.07,9.40;6,306.14,529.01,98.50,9.40">Carefully evaluate if the LLM agent has hallucinated or fabricated any information, especially regarding tool parameters, but also any other potential hallucinations.</s><s coords="6,410.63,529.01,115.59,9.40;6,306.14,542.56,218.27,9.40;6,305.41,556.11,54.83,9.40">Hallucinations should result in a significant decrease in the overall rating (closer to 1).</s><s coords="6,363.59,556.11,160.82,9.40;6,306.14,569.66,218.26,9.40;6,306.14,583.21,74.24,9.40">Go over each tool call parameter and justify whether it is explicitly provided by the user or hallucinated."</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="9,305.99,225.26,55.19,9.46">ASSISTANT:</head><p><s coords="9,307.18,246.02,135.87,8.76;9,307.11,259.57,102.82,8.76;9,307.05,273.12,155.64,8.76">SendVerificationCode ( username : mstein email : steinki89@fexter .</s><s coords="9,464.05,273.12,18.00,8.76;9,306.69,286.67,5.45,8.76;9,306.14,307.69,218.27,8.76;9,306.14,321.24,218.27,8.76">com ) I have sent a 6 digit verification code to your backup email steinki89@fexter.com</s><s coords="9,306.14,334.79,222.09,8.76">associated with the username mstein.</s><s coords="9,306.14,348.34,222.09,8.76">Please check your inbox for the code.</s><s coords="9,306.14,361.89,221.00,8.76;9,306.14,375.44,218.27,8.76;9,306.14,388.99,120.00,8.76;9,306.42,416.34,29.07,9.46;9,306.14,430.13,152.73,8.76">Once you receive the code, let me know, and I can guide you through resetting your password securely USER: I got the code, it's 984520.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="9,306.42,457.49,80.32,9.46">GROUND TRUTH:</head><p><s coords="9,306.14,471.28,218.54,8.76;9,306.14,484.83,70.91,8.76">Okay, please enter a new password for your account.</s><s coords="10,70.87,305.83,218.54,8.76;10,70.87,319.38,218.54,8.76;10,70.87,332.93,218.54,8.76;10,70.87,346.48,218.27,8.76;10,70.87,360.03,218.27,8.76;10,70.87,373.58,124.12,8.76">Can you change the location for my birthday party event on sunday to "Steak and Shake" and send an email to all my friends on the invite saying "Hi, I have made some changes to the event details for my birthday party.</s><s coords="10,204.57,373.58,84.57,8.76;10,70.87,387.13,218.54,8.76;10,70.87,400.68,136.36,8.76">I've decided to go to a restaurant instead-let me know if you can still make it.</s><s coords="10,327.44,448.69,147.26,9.46">k u m a r @ m y f i c t i o n a l e m a i l .</s><s coords="10,476.78,448.69,24.10,9.46;10,327.69,462.24,35.75,9.46">com , g e o f f .</s><s coords="10,366.33,462.24,88.75,9.46">smith@example .</s><s coords="10,457.19,462.24,24.51,9.46;10,308.01,475.79,134.14,9.46;10,307.02,489.34,168.68,9.46;10,327.40,502.89,179.77,9.46;10,327.80,516.44,140.37,9.46">com ] s u b j e c t : E v e n t u p d a t e body : Hi , I h a v e made some c h a n g e s t o t h e e v e n t d e t a i l s f o r my b i r t h d a y p a r t y .</s><s coords="10,477.59,516.44,24.27,9.46;10,327.55,529.99,186.29,9.46;10,327.72,543.54,174.25,9.46;10,327.19,557.09,114.79,9.46">I ' ve d e c i d e d t o go t o a r e s t a u r a n t i n s t e a d -l e t me know i f you c a n s t i l l make i t .</s><s coords="10,307.60,570.64,3.63,9.46">)</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,305.99,590.47,55.19,9.46">ASSISTANT:</head><p><s coords="10,306.14,604.26,218.27,8.76;10,306.14,617.81,218.27,8.76;10,306.14,631.36,65.45,8.76">Could you please provide the event_id of your birthday party event that needs to be modified?</s><s coords="11,307.32,321.65,127.76,9.46;11,307.56,335.20,153.76,9.46">u s e r n a m e : j u s t i n k o o l e m a i l : j u s t i n t i m e @ f m a i l .</s><s coords="12,72.51,482.40,148.03,9.46;12,71.38,495.94,161.92,9.46;12,72.47,509.49,108.16,9.46;12,72.85,523.04,199.42,9.46;12,72.17,536.59,187.00,9.46;12,72.78,550.14,146.66,9.46;12,72.83,563.69,107.48,9.46;12,72.70,577.24,94.50,9.46;12,81.78,597.01,207.36,8.76;12,70.87,610.56,92.73,8.76">e v e n t _ i d : 29496535 -b409 name : D e n t i s t A p p o i n t m e n t e v e n t _ t y p e : e v e n t s t a r t _ t i m e : 2023 -09 -11 1 5 : 0 0 : 0 0 e n d _ t i m e : 2023 -09 -11 1 7 : 0 0 : 0 0 l o c a t i o n : d e n t a l o f f i c e d e s c r i p t i o n : n u l l a t t e n d e e s : n u l l Sure, you have a dentist appointment at 4:00 PM today.</s></p><p><s coords="12,70.71,637.41,218.42,9.46;12,70.87,651.20,218.27,8.76;12,70.87,664.75,32.73,8.76">ASSISTANT: What time range would you like me to check your calendar for events today?</s><s coords="12,111.12,664.75,178.01,8.76;12,70.87,678.30,212.73,8.76">Please provide the start and end times in the format %Y-%m-%d %H:%M:%S."</s></p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="9,72.52,691.83,212.33,9.46;9,92.70,705.38,2.73,9.46;9,70.71,725.09,55.19,9.46;9,70.87,738.87,32.73,8.76;9,119.98,738.87,38.18,8.76;9,174.55,738.87,16.36,8.76;9,207.30,738.87,27.27,8.76;9,250.95,738.87,38.18,8.76;9,70.87,752.42,218.27,8.76;9,70.87,765.97,218.27,8.76;9,306.14,74.96,109.09,8.76;9,306.42,102.32,80.32,9.46;9,306.14,116.11,218.54,8.76;9,306.14,129.66,43.64,8.76;9,364.89,129.66,159.52,8.76;9,306.14,143.21,152.73,8.76;9,306.42,170.56,29.07,9.46;9,306.14,184.35,10.91,8.76;9,334.35,184.35,32.73,8.76;9,384.38,184.35,10.91,8.76;9,412.59,184.35,114.55,8.76;9,306.14,197.90,207.27,8.76"><head/><label/><figDesc><div><p><s coords="9,201.84,752.42,87.30,8.76;9,70.87,765.97,218.27,8.76;9,306.14,74.96,109.09,8.76;9,306.42,102.32,80.32,9.46;9,306.14,116.11,218.54,8.76;9,306.14,129.66,43.64,8.76;9,364.89,129.66,159.52,8.76;9,306.14,143.21,152.73,8.76">username mstein so I can send a verification code to reset your password.GROUND TRUTH:Okay, I can start an account recovery process, what's your email address associated with the account?</s><s coords="9,499.87,184.35,27.27,8.76">.com,</s><s coords="9,306.14,197.90,207.27,8.76">hopefully the hacker didn't change it.</s></p></div></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="9,305.99,512.18,55.19,9.46;9,307.16,532.95,90.08,8.76;9,307.11,546.50,102.82,8.76;9,307.17,560.04,161.67,8.76;9,307.15,573.59,201.36,8.76;9,306.69,587.14,5.45,8.76;9,306.06,607.92,81.75,9.46;9,308.20,628.45,94.48,9.46;9,307.79,642.00,94.69,9.46;9,305.99,663.02,55.19,9.46;9,307.12,683.78,63.93,8.76;9,307.11,697.33,102.82,8.76;9,307.11,710.88,175.21,8.76;9,306.69,724.43,5.45,8.76;9,306.06,745.21,81.75,9.46;9,307.79,765.73,94.69,9.46;10,70.71,74.72,55.19,9.46;10,70.87,88.51,218.27,8.76;10,70.87,102.06,218.27,8.76;10,70.87,115.61,218.27,8.76;10,70.87,129.16,163.64,8.76;10,70.87,155.86,218.27,9.81;10,70.87,169.41,111.91,9.81;10,81.78,183.65,209.17,9.46;10,70.87,197.20,172.72,9.46;10,71.14,211.01,55.31,9.46;10,72.78,231.07,102.05,9.46;10,72.21,244.62,193.52,9.46;10,72.57,258.17,213.43,9.46;10,72.04,271.72,108.38,9.46;10,71.14,292.04,29.07,9.46"><head/><label/><figDesc><div><p><s coords="9,327.89,765.73,74.60,9.46;10,70.71,74.72,55.19,9.46;10,70.87,88.51,218.27,8.76;10,70.87,102.06,190.28,8.76">e p t i o n : n u l l ASSISTANT: I have successfully reset your password and logged you into your account.</s><s coords="10,272.77,102.06,16.36,8.76;10,70.87,115.61,218.27,8.76;10,70.87,129.16,163.64,8.76">Let me know if you need any other assistance securing your account further.</s><s coords="10,70.87,155.86,218.27,9.81;10,70.87,169.41,111.91,9.81;10,81.78,183.65,209.17,9.46;10,70.87,197.20,172.72,9.46;10,71.14,211.01,55.31,9.46;10,72.78,231.07,102.05,9.46;10,72.21,244.62,193.52,9.46;10,72.57,258.17,213.43,9.46;10,72.04,271.72,108.38,9.46;10,71.14,292.04,29.07,9.46">Example 4: Assistant has enough information but needs to deduct first Below is an example prediction from the hallucination detection Module with Sonnet 3. METADATA: l o c a t i o n : London t i m e s t a m p : 2023 -09 -11 0 9 : 0 0 : 0 0 s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 u s e r n a m e : d e c t u r e USER:</s></p></div></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="10,71.14,427.80,80.32,9.46;10,72.18,461.41,88.86,9.46;10,72.57,474.96,213.43,9.46;10,72.85,488.51,199.42,9.46;10,72.17,502.05,187.00,9.46;10,72.32,515.60,3.63,9.46;10,70.78,535.93,81.75,9.46;10,72.51,555.99,148.11,9.46;10,71.38,569.54,128.78,9.46;10,72.47,583.08,108.16,9.46;10,72.85,596.63,199.42,9.46;10,72.17,610.18,187.00,9.46;10,72.78,623.73,160.17,9.46;10,72.83,637.28,153.68,9.46;10,72.88,650.83,211.68,9.46;10,92.70,664.38,49.00,9.46;10,72.02,691.21,75.94,9.46;10,72.57,704.76,213.43,9.46;10,72.51,718.31,148.11,9.46;10,72.39,731.86,187.29,9.46;10,72.32,745.41,3.63,9.46;10,70.78,765.73,81.75,9.46;10,308.20,74.72,94.48,9.46;10,307.25,100.74,62.89,9.46;10,307.85,114.29,213.43,9.46;10,307.32,127.84,135.03,9.46;10,307.60,141.39,3.63,9.46;10,306.06,161.22,81.75,9.46;10,307.32,180.95,135.03,9.46;10,307.56,194.50,107.95,9.46;10,327.44,208.05,168.60,9.46;10,307.15,221.60,122.57,9.46;10,306.65,235.15,143.08,9.46;10,307.25,261.17,62.89,9.46;10,307.85,274.72,213.43,9.46;10,307.32,288.27,95.39,9.46;10,307.60,301.81,3.63,9.46;10,306.06,321.65,81.75,9.46;10,307.32,341.38,95.39,9.46;10,307.56,354.93,194.74,9.46;10,307.15,368.48,122.57,9.46;10,306.65,382.03,103.11,9.46;10,307.25,408.05,62.89,9.46;10,307.85,421.59,213.43,9.46;10,307.68,435.14,94.73,9.46"><head/><label/><figDesc><div><p><s coords="10,94.31,461.41,66.74,9.46;10,72.57,474.96,213.43,9.46;10,72.85,488.51,199.42,9.46;10,72.17,502.05,187.00,9.46;10,72.32,515.60,3.63,9.46;10,70.78,535.93,81.75,9.46;10,72.51,555.99,148.11,9.46;10,71.38,569.54,128.78,9.46;10,72.47,583.08,108.16,9.46;10,72.85,596.63,199.42,9.46;10,72.17,610.18,187.00,9.46;10,72.78,623.73,160.17,9.46;10,72.83,637.28,153.68,9.46;10,72.88,650.83,211.68,9.46;10,92.70,664.38,49.00,9.46;10,72.02,691.21,75.94,9.46;10,72.57,704.76,213.43,9.46;10,72.51,718.31,148.11,9.46;10,72.39,731.86,187.29,9.46;10,72.32,745.41,3.63,9.46;10,325.38,180.95,116.97,9.46;10,307.56,194.50,107.95,9.46">r y C a l e n d a r ( s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 s t a r t _ t i m e : 2023 -09 -17 0 0 : 0 0 : 0 0 e n d _ t i m e : 2023 -09 -17 2 3 : 5 9 : 5 9 ) TOOL RESPONSE: e v e n t _ i d : c3463779 -7861 name : B i r t h d a y P a r t y e v e n t _ t y p e : e v e n t s t a r t _ t i m e : 2023 -09 -17 1 1 : 3 0 : 0 0 e n d _ t i m e : 2023 -09 -17 1 5 : 3 0 : 0 0 l o c a t i o n : Chuck e c h e e s e s d e s c r i p t i o n : Happy 40 t h ! a t t e n d i e s = [ d e c t u r e , S u r y a R a n i 9 0 , g e o f f ] M o d i f y E v e n t ( s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 e v e n t _ i d : c3463779 -7861 n e w _ l o c a t i o n : S t e a k and Shake ) r n a m e : S u r y a R a n i 9 0 e m a i l : s u r y a r a n i .</s><s coords="10,327.44,208.05,147.26,9.46">k u m a r @ m y f i c t i o n a l e m a i l .</s><s coords="10,476.83,208.05,19.21,9.46;10,307.15,221.60,122.57,9.46;10,306.65,235.15,143.08,9.46;10,307.25,261.17,62.89,9.46;10,307.85,274.72,213.43,9.46;10,307.32,288.27,95.39,9.46;10,307.60,301.81,3.63,9.46;10,306.06,321.65,81.75,9.46;10,307.32,341.38,95.39,9.46;10,307.56,354.93,81.76,9.46">com phone : 415 -555 -6789 name : S u r y a R a n i Kumar Q u e r y U s e r ( s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 u s e r n a m e : g e o f f ) TOOL RESPONSE: u s e r n a m e : g e o f f e m a i l : g e o f f .</s><s coords="10,392.22,354.93,88.73,9.46">smith@example .</s><s coords="10,483.08,354.93,19.21,9.46;10,307.15,368.48,122.57,9.46;10,306.65,382.03,103.11,9.46;10,307.25,408.05,62.89,9.46;10,307.85,421.59,213.43,9.46;10,307.68,435.14,94.73,9.46">com phone : 555 -123 -4567 name : J e f f S m i t h S e n d E m a i l ( s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 t o : [ s u r y a r a n i .</s></p></div></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="10,306.14,657.89,218.27,9.81;10,306.42,671.97,55.31,9.46;10,308.06,691.70,102.05,9.46;10,307.49,705.25,193.52,9.46;10,307.85,718.80,213.43,9.46;10,307.32,732.35,127.76,9.46;10,306.42,752.18,29.07,9.46;10,306.14,765.97,218.27,8.76;11,70.87,74.96,218.54,8.76;11,70.87,88.51,54.55,8.76;11,71.14,115.60,80.32,9.46;11,72.18,149.13,88.86,9.46;11,72.57,162.68,213.43,9.46;11,72.57,176.23,213.43,9.46;11,72.85,189.78,199.42,9.46;11,72.17,203.33,187.00,9.46;11,72.32,216.88,3.63,9.46;11,70.78,237.09,81.75,9.46;11,72.51,257.07,148.11,9.46;11,71.38,270.62,122.05,9.46;11,72.47,284.17,121.43,9.46;11,72.85,297.72,199.42,9.46;11,72.17,311.27,187.00,9.46;11,72.78,324.81,174.27,9.46;11,72.83,338.36,212.14,9.46;11,97.48,351.91,161.59,9.46;11,81.78,372.36,207.36,8.76;11,70.87,385.91,218.27,8.76;11,70.87,399.46,222.09,8.76;11,70.87,413.01,218.27,8.76;11,70.87,426.56,152.73,8.76;11,70.71,453.65,55.19,9.46;11,70.87,467.43,218.27,8.76;11,70.87,480.98,218.27,8.76;11,70.59,494.53,186.53,8.76;11,273.04,494.53,16.36,8.76;11,70.87,508.08,218.27,8.76;11,70.87,521.63,218.27,8.76;11,70.87,535.18,147.27,8.76;11,70.87,561.84,195.83,9.81;11,81.78,576.04,209.17,9.46;11,70.87,589.59,148.16,9.46;11,71.14,616.92,55.31,9.46;11,72.78,636.90,146.99,9.46;11,72.21,650.45,193.52,9.46;11,71.14,670.66,29.07,9.46;11,70.87,684.45,218.27,8.76;11,70.87,698.00,65.45,8.76;11,70.71,725.09,55.19,9.46;11,70.87,738.87,218.27,8.76;11,70.87,752.42,207.27,8.76;11,306.42,74.72,29.07,9.46;11,305.87,88.51,218.54,8.76;11,306.42,115.47,80.32,9.46;11,307.37,135.21,62.77,9.46;11,307.32,148.75,127.76,9.46;11,307.38,162.30,160.51,9.46;11,307.60,175.85,3.63,9.46;11,306.06,195.69,81.75,9.46;11,307.79,215.42,148.11,9.46;11,307.85,228.97,213.50,9.46;11,307.63,254.98,141.06,9.46;11,307.85,268.53,179.71,9.46;11,327.16,282.08,37.08,9.46;11,306.06,301.92,81.75,9.46"><head>Example 5 :</head><label>5</label><figDesc><div><p><s coords="10,361.22,657.89,163.19,9.81;10,306.42,671.97,55.31,9.46;10,308.06,691.70,102.05,9.46;10,307.49,705.25,193.52,9.46;10,307.85,718.80,213.43,9.46;10,307.32,732.35,127.76,9.46;10,306.42,752.18,29.07,9.46;10,306.14,765.97,218.27,8.76;11,70.87,74.96,49.09,8.76">Asking for unnecessary information METADATA: l o c a t i o n : London t i m e s t a m p : 2023 -09 -10 0 9 : 0 0 : 0 0 s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 u s e r n a m e : j u s t i n k o o l USER: I need to cancel my meeting with Alicia tomorrow.</s><s coords="11,127.59,74.96,161.81,8.76;11,70.87,88.51,54.55,8.76">Can you check the details for the event?</s><s coords="11,71.14,115.60,80.32,9.46;11,72.18,149.13,88.86,9.46;11,72.57,162.68,213.43,9.46;11,72.57,176.23,213.43,9.46;11,72.85,189.78,155.53,9.46;11,92.58,257.07,128.04,9.46;11,71.38,270.62,122.05,9.46;11,72.47,284.17,121.43,9.46;11,72.85,297.72,199.42,9.46;11,72.17,311.27,187.00,9.46;11,72.78,324.81,174.27,9.46;11,72.83,338.36,212.14,9.46">GROUND TRUTH: Q u e r y C a l e n d a r ( s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 s t a r t _ t i m e : 2023 -09 -11 0 n t _ i d : 5480 d946 -2381 name : J u s t i n : A l i c i a e v e n t _ t y p e : m e e t i n g s t a r t _ t i m e : 2023 -09 -11 1 0 : 0 0 : 0 0 e n d _ t i m e : 2023 -09 -11 1 0 : 3 0 : 0 0 l o c a t i o n : C o n f e r e n c e Room 1 d e s c r i p t i o n : T a l k a b o u t a n y t h i n g .</s><s coords="11,97.48,351.91,161.59,9.46">Move t o y o u r c o n v e n i e n c e .</s><s coords="11,81.78,372.36,207.36,8.76;11,70.87,385.91,187.06,8.76">I found a meeting tomorrow at 10 am with the title Justin:Alicia.</s><s coords="11,272.77,385.91,16.36,8.76;11,70.87,399.46,222.09,8.76">The description says "Talk about anything.</s><s coords="11,70.87,413.01,141.87,8.76">Move to your convenience."</s><s coords="11,218.20,413.01,70.93,8.76;11,70.87,426.56,152.73,8.76;11,70.71,453.65,55.19,9.46;11,70.87,467.43,218.27,8.76;11,70.87,480.98,218.27,8.76;11,70.59,494.53,186.53,8.76">The attendees are you and Alicia (aliciab) ASSISTANT: Could you please provide the date, start time, and end time of the meeting with Alicia that you need to cancel?</s><s coords="11,273.04,494.53,16.36,8.76;11,70.87,508.08,218.27,8.76;11,70.87,521.63,218.27,8.76;11,70.87,535.18,147.27,8.76">Any other details like the meeting title or attendees would also be helpful to identify the correct event?</s><s coords="11,70.87,561.84,195.83,9.81;11,81.78,576.04,209.17,9.46;11,70.87,589.59,148.16,9.46;11,71.14,616.92,55.31,9.46;11,72.78,636.90,146.99,9.46;11,72.21,650.45,193.52,9.46;11,71.14,670.66,29.07,9.46;11,70.87,684.45,218.27,8.76;11,70.87,698.00,65.45,8.76">Example 6: Asking for User Confirmation The following is a prediction from the Hallucination detection module approach METADATA: l o c a t i o n : San F r a n c i s c o t i m e s t a m p : 2023 -09 -11 0 9 : 0 0 : 0 0 USER: Hey can you help me check my account information?</s><s coords="11,70.71,725.09,55.19,9.46;11,70.87,738.87,191.12,8.76">ASSISTANT: Sure, I see you're not logged in.</s><s coords="11,272.77,738.87,16.36,8.76;11,70.87,752.42,207.27,8.76">Can you provide you username and password?</s><s coords="11,306.42,74.72,29.07,9.46;11,305.87,88.51,218.54,8.76;11,306.42,115.47,80.32,9.46;11,307.37,135.21,62.77,9.46;11,307.32,148.75,127.76,9.46;11,307.38,162.30,160.51,9.46;11,307.60,175.85,3.63,9.46;11,306.06,195.69,81.75,9.46;11,307.79,215.42,148.11,9.46;11,307.85,228.97,213.50,9.46;11,307.63,254.98,141.06,9.46;11,307.85,268.53,109.00,9.46">USER: Yeah, it's justinkool and justforkicks123 GROUND TRUTH: U s e r L o g i n ( u s e r n a m e : j u s t i n k o o l p a s s w o r d : j u s t f o r k i c k s 1 2 3 ) TOOL RESPONSE: e v e n t _ i d : 5480 d946 -2381 s e s s i o n _ t o k e n : e 1 4 9 6 3 6 f -d9ca -0792 G e t A c c o u n t I n f o r m a t i o n ( s e s s i o n _ t o k e n : e 1</s></p></div></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="11,306.14,691.28,218.27,9.81;11,306.42,705.35,55.31,9.46;11,308.06,725.09,146.99,9.46;11,307.49,738.63,193.52,9.46;11,307.85,752.18,213.43,9.46;11,307.32,765.73,108.38,9.46;12,71.14,74.72,29.07,9.46;12,70.87,88.51,218.54,8.76;12,70.87,102.06,218.27,8.76;12,70.87,115.61,212.73,8.76;12,70.71,142.47,55.19,9.46;12,71.50,162.00,56.81,9.46;12,72.57,175.55,213.43,9.46;12,72.22,189.09,88.77,9.46;12,72.32,202.64,3.63,9.46;12,70.78,222.17,81.75,9.46;12,72.38,241.70,121.99,9.46;12,81.78,261.46,207.36,8.76;12,70.87,275.01,218.54,8.76;12,70.87,288.56,65.45,8.76;12,71.14,315.42,29.07,9.46;12,70.59,329.21,218.81,8.76;12,70.87,342.76,218.18,8.76;12,70.71,369.62,55.19,9.46;12,72.18,389.14,88.86,9.46;12,72.57,402.69,213.43,9.46;12,72.85,416.24,199.42,9.46;12,72.17,429.79,187.00,9.46;12,72.32,443.34,3.63,9.46;12,70.78,462.87,81.75,9.46"><head>Example 7 :</head><label>7</label><figDesc><div><p><s coords="11,361.22,691.28,163.19,9.81;11,306.42,705.35,55.31,9.46;11,308.06,725.09,146.99,9.46;11,307.49,738.63,193.52,9.46;11,307.85,752.18,213.43,9.46;11,307.32,765.73,108.38,9.46;12,71.14,74.72,29.07,9.46;12,70.87,88.51,218.54,8.76;12,70.87,102.06,196.43,8.76">Asking for unnecessary information METADATA: l o c a t i o n : San F r a n c i s c o t i m e s t a m p : 2023 -09 -11 0 9 : 0 0 : 0 0 s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 u s e r n a m e : d e c t u r e USER:Hey I need to remember to buy a birthday gift for my spouse before I go home.</s><s coords="12,272.77,102.06,16.36,8.76;12,70.87,115.61,212.73,8.76;12,125.42,261.46,163.71,8.76;12,70.87,275.01,218.54,8.76;12,70.87,288.56,65.45,8.76;12,71.14,315.42,29.07,9.46;12,70.59,329.21,38.18,8.76">Can you set an alarm for 2:30 to remind me? ve set an alarm for 2:30 PM to remind you to buy a birthday gift for your spouse.USER:Thanks!</s><s coords="12,118.56,329.21,170.85,8.76;12,70.87,342.76,218.18,8.76;12,70.71,369.62,55.19,9.46;12,72.18,389.14,88.86,9.46;12,72.57,402.69,213.43,9.46;12,72.85,416.24,155.53,9.46">Can you also check my calendar to see if I have any other events today?ASSISTANT:Q u e r y C a l e n d a r ( s e s s i o n _ t o k e n : 98 a5a87a -7714 -b404 s t a r t _ t i m e : 2023 -09 -11 0</s></p></div></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="3,70.87,277.72,430.82,497.47"><head>Table 2 :</head><label>2</label><figDesc/><table coords="3,322.23,277.72,179.47,102.51"><row><cell/><cell cols="3">Precision Recall F1</cell></row><row><cell/><cell cols="2">Sonnet 3</cell><cell/></row><row><cell>No Search</cell><cell>0.656</cell><cell>0.765</cell><cell>0.706</cell></row><row><cell>MCTS</cell><cell>0.502</cell><cell>0.630</cell><cell>0.559</cell></row><row><cell/><cell>Haiku 3</cell><cell/><cell/></row><row><cell>No Search</cell><cell>0.588</cell><cell>0.698</cell><cell>0.638</cell></row><row><cell>MCTS</cell><cell>0.567</cell><cell>0.648</cell><cell>0.605</cell></row></table><note coords="3,170.74,725.09,120.21,9.46;3,70.87,738.63,218.27,9.46;3,70.87,752.18,220.08,9.46;3,70.87,765.73,218.27,9.46"><p><s coords="3,170.74,725.09,120.21,9.46;3,70.87,738.63,163.68,9.46">ToolTalk evaluation sequentially decodes one tool call at a time.</s><s coords="3,238.32,738.63,50.82,9.46;3,70.87,752.18,220.08,9.46;3,70.87,765.73,218.27,9.46">If the agent response contains text without tool calls, it's considered turn completion; if it contains a tool call, the</s></p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="7,70.56,77.17,457.67,697.56"><head>Table 4 :</head><label>4</label><figDesc><div><p><s coords="7,108.31,244.31,227.94,8.64">Experiment results on math reasoning dataset GSM8K.</s><s coords="7,339.39,244.31,185.02,8.64;7,70.87,256.26,375.60,8.64">The first two rows of the table correspond to the baselines: 1) no search, 2) original MCTSr implementation with ground-truth feedback.</s><s coords="7,450.63,256.26,73.78,8.64;7,70.87,268.22,376.95,8.64">The later six rows correspond to various proposed modifications to test the effectiveness of self-feedback in search.</s><s coords="7,450.89,268.22,73.52,8.64;7,70.87,280.17,453.79,8.64;7,70.87,292.13,87.52,8.64">Since each node in the MCTS tree can contain multiple reward, to get the final reward of a node we experimented with mean and max aggregation strategies.</s><s coords="7,161.46,292.13,364.72,8.64;7,70.87,304.08,48.93,8.64">In the above table, these variations are named with suffixes "mean reward" and "max reward" respectively.</s><s coords="7,122.89,304.08,401.52,8.64;7,70.87,316.04,401.91,8.64">Across all the methods without access to ground-truth feedback, the most promising alternative seems to be majority voting rather than picking the answer with maximum reward given from self-feedback</s></p></div></figDesc><table coords="7,70.71,77.17,457.52,697.56"><row><cell/><cell>LLaMA 3</cell><cell>Mistral v0.3</cell><cell>haiku 3</cell><cell>Sonnet 3</cell></row><row><cell>MCTS: Ground-truth Feedback</cell><cell>0.958</cell><cell>0.82</cell><cell>0.964</cell><cell>0.923</cell></row><row><cell>No Search</cell><cell>0.813</cell><cell>0.426</cell><cell>0.866</cell><cell>0.757</cell></row><row><cell>MCTS: Random Selection</cell><cell cols="2">0.751±0.006 0.45±0.008</cell><cell cols="2">0.864±0.005 0.68±0.009</cell></row><row><cell>MCTS: Majority Voting</cell><cell cols="4">0.883±0.002 0.608±0.004 0.905±0.001 0.786±0.003</cell></row><row><cell cols="2">MCTS: Maximum of mean Reward 0.776±0.0</cell><cell cols="3">0.469±0.003 0.854±0.003 0.685±0.0</cell></row><row><cell cols="4">MCTS: Maximum of max Rewards 0.773±0.003 0.485±0.003 0.86±0.004</cell><cell>0.699±0.008</cell></row><row><cell>MCTS: Weighted Majority voting of</cell><cell>0.422±0.0</cell><cell cols="2">0.542±0.001 0.903±0.0</cell><cell>0.785±0.0</cell></row><row><cell>mean Reward</cell><cell/><cell/><cell/><cell/></row><row><cell>MCTS: Weighted Majority voting of</cell><cell cols="2">0.598±0.001 0.554±0.0</cell><cell>0.901±0.0</cell><cell>0.784±0.001</cell></row><row><cell>max Reward</cell><cell/><cell/><cell/><cell/></row><row><cell>D ToolTalk Error Analysis</cell><cell/><cell/><cell/><cell/></row><row><cell cols="2">Example 1: Showcasing Model's Hallucination</cell><cell/><cell/><cell/></row><row><cell>problem</cell><cell/><cell/><cell/><cell/></row><row><cell>USER:</cell><cell/><cell>ASSISTANT:</cell><cell/><cell/></row><row><cell cols="2">Hi assistant, I want to make a new</cell><cell>CreateEvent (</cell><cell/><cell/></row><row><cell cols="2">account and put an important meeting on</cell><cell cols="2">name : Important Meeting</cell><cell/></row><row><cell>the calendar for tomorrow.</cell><cell/><cell cols="3">description : All hands meeting to</cell></row><row><cell/><cell/><cell cols="3">discuss quarterly results .</cell></row><row><cell>GROUND TRUTH:</cell><cell/><cell cols="2">event_type : meeting</cell><cell/></row><row><cell cols="2">Ok, I can help with that. Can you give me</cell><cell cols="3">start_time : 2023 -09 -12 14:00:00</cell></row><row><cell cols="2">a username, password, email, name, and</cell><cell cols="3">end_time : 2023 -09 -12 16:00:00</cell></row><row><cell>phone number for the account?</cell><cell/><cell cols="3">attendies : [ user1 , user2 ]</cell></row><row><cell/><cell/><cell cols="3">session_token : e149636f -d9ca -0792</cell></row><row><cell>ASSISTANT:</cell><cell/><cell>)</cell><cell/><cell/></row><row><cell>RegisterUser (</cell><cell/><cell cols="2">TOOL RESPONSE:</cell><cell/></row><row><cell cols="2">username : assistant_request</cell><cell/><cell/><cell/></row><row><cell>password : password123</cell><cell/><cell cols="2">e x c e p t i o n : n u l l</cell><cell/></row><row><cell cols="2">email : assistant@example . com )</cell><cell cols="3">ASSISTANT: I have successfully created your account</cell></row><row><cell>TOOL RESPONSE:</cell><cell/><cell cols="3">and added the important meeting to your</cell></row><row><cell/><cell/><cell cols="3">calendar for tomorrow. Please let me</cell></row><row><cell cols="2">s e s s i o n _ t o k e n : e 1 4 9 6 3 6 f -d9ca -0792</cell><cell cols="3">know if you need anything else!</cell></row><row><cell>ASSISTANT:</cell><cell/><cell/><cell/><cell/></row><row><cell>UserLogin (</cell><cell/><cell cols="3">Example 2: Showcasing Model's Hallucination</cell></row><row><cell cols="2">username : assistant_request</cell><cell>problem</cell><cell/><cell/></row><row><cell>password : password123</cell><cell/><cell/><cell/><cell/></row><row><cell>)</cell><cell/><cell>USER:</cell><cell/><cell/></row><row><cell>TOOL RESPONSE:</cell><cell/><cell cols="3">Hey I have a morning flight tomorrow. Can you set an alarm for 8:00 am?</cell></row></table><note coords="7,307.79,349.89,200.33,9.46;7,327.44,363.44,180.35,9.46;7,327.67,376.99,166.67,9.46"><p><s coords="7,307.79,349.89,200.33,9.46;7,327.44,363.44,127.64,9.46">e x c e p t i o n : Only one u s e r c a n be l o g g e d i n a t a t i m e .</s><s coords="7,465.09,363.44,42.70,9.46;7,327.67,376.99,166.67,9.46">C u r r e n t u s e r i s a s s i s t a n t _ r e q u e s t .</s></p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="13,70.56,138.10,455.59,575.22"><head>Table 6 :</head><label>6</label><figDesc><div><p><s coords="13,105.43,692.73,420.72,8.64">Again similar to Table5, on ToolTalk, we compare various strategies to build better feedback mechanisms.</s><s coords="13,70.87,704.68,273.13,8.64">However instead of using MCTS, we experimented with DFS search</s></p></div></figDesc><table coords="13,76.45,138.10,449.21,537.11"><row><cell>Aggregation</cell><cell>Method</cell><cell>P</cell><cell>R</cell><cell>F1</cell><cell>Bad Action</cell></row><row><cell/><cell/><cell>Sonnet3</cell><cell/><cell/><cell/></row><row><cell/><cell>No Search</cell><cell cols="4">0.656±0.01 0.765±0.008 0.706±0.009 0.275±0.013</cell></row><row><cell/><cell>MCTS</cell><cell cols="4">0.474±0.014 0.607±0.02 0.532±0.014 0.425±0.016</cell></row><row><cell>Value</cell><cell>+ Guidelines</cell><cell cols="4">0.476±0.02 0.555±0.026 0.512±0.019 0.427±0.027</cell></row><row><cell/><cell>+ ICL</cell><cell>0.706±0.02</cell><cell cols="3">0.645±0.01 0.674±0.014 0.248±0.015</cell></row><row><cell/><cell>+ Module</cell><cell cols="4">0.756±0.026 0.52±0.023 0.616±0.024 0.203±0.026</cell></row><row><cell/><cell>MCTS</cell><cell>0.328</cell><cell>0.622</cell><cell>0.43</cell><cell>0.458</cell></row><row><cell>Majority Voting</cell><cell>+ Guidelines</cell><cell>0.362</cell><cell>0.597</cell><cell>0.451</cell><cell>0.42</cell></row><row><cell/><cell>+ ICL</cell><cell>0.614</cell><cell>0.723</cell><cell>0.664</cell><cell>0.286</cell></row><row><cell/><cell>+ Module</cell><cell>0.702</cell><cell>0.605</cell><cell>0.65</cell><cell>0.23</cell></row><row><cell/><cell>MCTS</cell><cell>0.356</cell><cell>0.655</cell><cell>0.461</cell><cell>0.457</cell></row><row><cell>W.Majority Voting</cell><cell>+ Guidelines</cell><cell>0.374</cell><cell>0.676</cell><cell>0.482</cell><cell>0.42</cell></row><row><cell/><cell>+ ICL</cell><cell>0.645</cell><cell>0.655</cell><cell>0.65</cell><cell>0.292</cell></row><row><cell/><cell>+ Module</cell><cell>0.782</cell><cell>0.559</cell><cell>0.652</cell><cell>0.208</cell></row><row><cell/><cell/><cell>Haiku3</cell><cell/><cell/><cell/></row><row><cell/><cell>No Search</cell><cell cols="4">0.588±0.023 0.698±0.019 0.638±0.021 0.311±0.024</cell></row><row><cell/><cell>MCTS</cell><cell cols="4">0.562±0.029 0.619±0.027 0.589±0.028 0.341±0.032</cell></row><row><cell>Value</cell><cell>+ Guidelines</cell><cell cols="4">0.563±0.01 0.623±0.012 0.592±0.01 0.325±0.018</cell></row><row><cell/><cell>+ ICL</cell><cell>0.66±0.015</cell><cell cols="3">0.591±0.01 0.623±0.005 0.288±0.012</cell></row><row><cell/><cell>+ Module</cell><cell cols="4">0.61±0.005 0.667±0.012 0.637±0.007 0.315±0.012</cell></row><row><cell/><cell>MCTS</cell><cell>0.571</cell><cell>0.71</cell><cell>0.633</cell><cell>0.31</cell></row><row><cell>Majority Voting</cell><cell>+ Guidelines</cell><cell>0.5</cell><cell>0.676</cell><cell>0.575</cell><cell>0.314</cell></row><row><cell/><cell>+ ICL</cell><cell>0.594</cell><cell>0.693</cell><cell>0.64</cell><cell>0.297</cell></row><row><cell/><cell>+ Module</cell><cell>0.58</cell><cell>0.685</cell><cell>0.628</cell><cell>0.346</cell></row><row><cell/><cell>MCTS</cell><cell>0.563</cell><cell>0.676</cell><cell>0.614</cell><cell>0.32</cell></row><row><cell>W.Majority Voting</cell><cell>+ Guidelines</cell><cell>0.495</cell><cell>0.681</cell><cell>0.573</cell><cell>0.329</cell></row><row><cell/><cell>+ ICL</cell><cell>0.628</cell><cell>0.618</cell><cell>0.623</cell><cell>0.31</cell></row><row><cell/><cell>+ Module</cell><cell>0.593</cell><cell>0.685</cell><cell>0.636</cell><cell>0.308</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="5,70.87,286.17,219.52,8.64;5,81.78,297.13,209.01,8.64;5,81.78,308.09,207.36,8.64;5,81.78,318.87,206.33,8.82" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" coords="5,233.27,297.13,57.52,8.64;5,81.78,308.09,207.36,8.64;5,81.78,319.05,64.23,8.64">Sets: Leveraging self-verification and self-correction for improved test-time scaling</title>
+		<author>
+			<persName coords=""><forename type="first">Jiefeng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jie</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinyun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chengrun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ruoxi</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sercan</forename><forename type="middle">Ö</forename><surname>Arık</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.19306</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Jiefeng Chen, Jie Ren, Xinyun Chen, Chengrun Yang, Ruoxi Sun, and Sercan Ö Arık. 2025. Sets: Leverag- ing self-verification and self-correction for improved test-time scaling. arXiv preprint arXiv:2501.19306.</note>
+</biblStruct>
+
+<biblStruct coords="5,70.87,339.11,219.52,8.64;5,81.78,350.07,207.36,8.64;5,81.78,361.03,207.36,8.64;5,81.78,371.99,209.10,8.64;5,81.78,382.95,209.01,8.64;5,81.78,393.73,159.57,8.82" xml:id="b1">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Karl</forename><surname>Cobbe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vineet</forename><surname>Kosaraju</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohammad</forename><surname>Bavarian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mark</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Heewoo</forename><surname>Jun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><surname>Plappert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jerry</forename><surname>Tworek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jacob</forename><surname>Hilton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Reiichiro</forename><surname>Nakano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><surname>Hesse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Schulman</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2110.14168</idno>
+		<title level="m" coords="5,110.83,382.95,179.96,8.64;5,81.78,393.91,17.05,8.64">Training verifiers to solve math word problems</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano, Christopher Hesse, and John Schulman. 2021. Training verifiers to solve math word prob- lems. arXiv preprint arXiv:2110.14168.</note>
+</biblStruct>
+
+<biblStruct coords="5,70.87,413.97,219.92,8.64;5,81.78,424.75,207.36,8.82;5,81.78,435.71,110.05,8.59" xml:id="b2">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Nicholas</forename><surname>Farn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Shin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2311.10775</idno>
+		<title level="m" coords="5,230.32,413.97,60.47,8.64;5,81.78,424.93,174.53,8.64">Tooltalk: Evaluating tool-usage in a conversation setting</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Nicholas Farn and Richard Shin. 2023. Tooltalk: Eval- uating tool-usage in a conversation setting. arXiv preprint arXiv:2311.10775.</note>
+</biblStruct>
+
+<biblStruct coords="5,70.87,455.95,219.51,8.64;5,81.78,466.91,208.60,8.64;5,81.78,477.87,209.01,8.64;5,81.78,488.83,209.01,8.64;5,81.78,499.61,195.81,8.82" xml:id="b3">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Dejian</forename><surname>Daya Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Haowei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Junxiao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ruoyu</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Runxin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qihao</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shirong</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peiyi</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.12948</idno>
+		<title level="m" coords="5,221.25,477.87,69.54,8.64;5,81.78,488.83,209.01,8.64;5,81.78,499.79,53.65,8.64">Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Ruoyu Zhang, Runxin Xu, Qihao Zhu, Shirong Ma, Peiyi Wang, Xiao Bi, et al. 2025. Deepseek-r1: In- centivizing reasoning capability in llms via reinforce- ment learning. arXiv preprint arXiv:2501.12948.</note>
+</biblStruct>
+
+<biblStruct coords="5,70.87,519.85,218.27,8.64;5,81.31,530.81,209.48,8.64;5,81.78,541.77,207.36,8.64;5,81.78,552.55,207.36,8.82;5,81.47,563.51,208.91,8.59;5,81.78,574.65,209.01,8.64;5,81.78,585.61,89.12,8.64" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coords="5,271.60,530.81,19.19,8.64;5,81.78,541.77,207.36,8.64;5,81.78,552.73,23.29,8.64">Reasoning with language model is planning with world model</title>
+		<author>
+			<persName coords=""><forename type="first">Shibo</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yi</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Haodi</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joshua</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daisy</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhiting</forename><surname>Hu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2023.emnlp-main.507</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coords="5,126.45,552.55,162.69,8.59;5,81.47,563.51,204.75,8.59">Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing</title>
+		<meeting>the 2023 Conference on Empirical Methods in Natural Language Processing<address><addrLine>Singapore</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="8154" to="8173"/>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shibo Hao, Yi Gu, Haodi Ma, Joshua Hong, Zhen Wang, Daisy Wang, and Zhiting Hu. 2023. Rea- soning with language model is planning with world model. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 8154-8173, Singapore. Association for Com- putational Linguistics.</note>
+</biblStruct>
+
+<biblStruct coords="5,70.87,605.67,219.52,8.64;5,81.78,616.63,209.01,8.64;5,81.78,627.59,207.36,8.64;5,81.78,638.37,208.60,8.82;5,81.78,649.51,75.02,8.64" xml:id="b5">
+	<monogr>
+		<title level="m" type="main" coords="5,226.04,627.59,63.10,8.64;5,81.78,638.55,164.10,8.64">Large language models cannot self-correct reasoning yet</title>
+		<author>
+			<persName coords=""><forename type="first">Jie</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinyun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Swaroop</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Steven</forename><surname>Huaixiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Adams</forename><forename type="middle">Wei</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinying</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Denny</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Zhou</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2310.01798</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+	<note type="raw_reference">Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu Steven Zheng, Adams Wei Yu, Xiny- ing Song, and Denny Zhou. 2024. Large language models cannot self-correct reasoning yet. Preprint, arXiv:2310.01798.</note>
+</biblStruct>
+
+<biblStruct coords="5,70.87,669.57,218.27,8.64;5,81.78,680.53,209.01,8.64;5,81.78,691.49,209.10,8.64;5,81.78,702.45,207.36,8.64;5,81.78,713.23,209.01,8.82;5,81.78,724.19,162.47,8.59" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coords="5,81.78,702.45,207.36,8.64;5,81.78,713.41,114.08,8.64">Position: LLMs can't plan, but can help planning in LLM-modulo frameworks</title>
+		<author>
+			<persName coords=""><forename type="first">Subbarao</forename><surname>Kambhampati</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Karthik</forename><surname>Valmeekam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lin</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mudit</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kaya</forename><surname>Stechly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Siddhant</forename><surname>Bhambri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lucas</forename><surname>Paul Saldyt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anil</forename><forename type="middle">B</forename><surname>Murthy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coords="5,214.91,713.23,75.88,8.59;5,81.78,724.19,158.13,8.59">Forty-first International Conference on Machine Learning</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Subbarao Kambhampati, Karthik Valmeekam, Lin Guan, Mudit Verma, Kaya Stechly, Siddhant Bham- bri, Lucas Paul Saldyt, and Anil B Murthy. 2024. Position: LLMs can't plan, but can help planning in LLM-modulo frameworks. In Forty-first Interna- tional Conference on Machine Learning.</note>
+</biblStruct>
+
+<biblStruct coords="5,70.87,744.25,219.92,8.82;5,81.78,755.21,209.01,8.82;5,81.31,766.35,116.38,8.64" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" coords="5,162.70,744.25,128.08,8.59;5,81.78,755.21,117.77,8.59">The Art of Computer Programming: Sorting and Searching</title>
+		<author>
+			<persName coords=""><forename type="first">Donald</forename><surname>Knuth</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Addison-Wesley Professional</publisher>
+			<biblScope unit="volume">3</biblScope>
+			<pubPlace>Boston</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Donald Knuth. 1998. The Art of Computer Program- ming: Sorting and Searching, volume 3. Addison- Wesley Professional, Boston.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,75.34,219.92,8.64;5,317.05,86.30,207.36,8.64;5,317.05,97.26,207.36,8.64;5,316.74,108.22,207.67,8.64;5,317.05,119.00,168.97,8.82" xml:id="b8">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Niklas</forename><surname>Muennighoff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zitong</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Weijia</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lisa</forename><surname>Xiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hannaneh</forename><surname>Fei-Fei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luke</forename><surname>Hajishirzi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Percy</forename><surname>Zettlemoyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Emmanuel</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tatsunori</forename><surname>Candès</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Hashimoto</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.19393</idno>
+		<title level="m" coords="5,439.26,108.22,85.15,8.64;5,317.05,119.18,26.88,8.64">s1: Simple test-time scaling</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Niklas Muennighoff, Zitong Yang, Weijia Shi, Xi- ang Lisa Li, Li Fei-Fei, Hannaneh Hajishirzi, Luke Zettlemoyer, Percy Liang, Emmanuel Candès, and Tatsunori Hashimoto. 2025. s1: Simple test-time scaling. arXiv preprint arXiv:2501.19393.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,143.59,218.27,8.64;5,317.05,154.55,207.36,8.64;5,317.05,165.51,207.36,8.64;5,317.05,176.29,207.35,8.82;5,317.05,187.25,75.27,8.59" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" coords="5,384.16,165.51,140.25,8.64;5,317.05,176.47,139.06,8.64">Agent q: Advanced reasoning and learning for autonomous ai agents</title>
+		<author>
+			<persName coords=""><forename type="first">Pranav</forename><surname>Putta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Edmund</forename><surname>Mills</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Naman</forename><surname>Garg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sumeet</forename><surname>Motwani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chelsea</forename><surname>Finn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Divyansh</forename><surname>Garg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rafael</forename><surname>Rafailov</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2408.07199</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Pranav Putta, Edmund Mills, Naman Garg, Sumeet Motwani, Chelsea Finn, Divyansh Garg, and Rafael Rafailov. 2024. Agent q: Advanced reasoning and learning for autonomous ai agents. arXiv preprint arXiv:2408.07199.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,211.85,219.52,8.64;5,317.05,222.81,209.10,8.64;5,317.05,233.77,209.01,8.64;5,317.05,244.55,207.36,8.82;5,317.05,255.51,207.36,8.59;5,316.72,266.47,209.34,8.59;5,317.05,277.42,208.61,8.82;5,317.05,288.56,207.35,8.64;5,317.05,299.52,46.77,8.64" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coords="5,346.25,233.77,179.81,8.64;5,317.05,244.73,18.59,8.64">Grounding gaps in language model generations</title>
+		<author>
+			<persName coords=""><forename type="first">Omar</forename><surname>Shaikh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kristina</forename><surname>Gligoric</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ashna</forename><surname>Khetan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><surname>Gerstgrasser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Diyi</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dan</forename><surname>Jurafsky</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.naacl-long.348</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coords="5,359.69,244.55,164.72,8.59;5,317.05,255.51,207.36,8.59;5,316.72,266.47,209.34,8.59;5,317.05,277.42,32.99,8.59;5,390.62,277.42,57.78,8.59">Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</title>
+		<meeting>the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies<address><addrLine>Mexico City, Mexico</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="6279" to="6296"/>
+		</imprint>
+	</monogr>
+	<note>: Long Papers)</note>
+	<note type="raw_reference">Omar Shaikh, Kristina Gligoric, Ashna Khetan, Matthias Gerstgrasser, Diyi Yang, and Dan Jurafsky. 2024. Grounding gaps in language model genera- tions. In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Tech- nologies (Volume 1: Long Papers), pages 6279-6296, Mexico City, Mexico. Association for Computational Linguistics.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,323.94,219.92,8.64;5,317.05,334.90,207.36,8.64;5,317.05,345.86,207.36,8.64;5,317.05,356.64,139.40,8.82" xml:id="b11">
+	<monogr>
+		<title level="m" type="main" coords="5,383.11,334.90,141.30,8.64;5,317.05,345.86,207.36,8.64;5,317.05,356.82,18.68,8.64">On the self-verification limitations of large language models on reasoning and planning tasks</title>
+		<author>
+			<persName coords=""><forename type="first">Kaya</forename><surname>Stechly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Karthik</forename><surname>Valmeekam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Subbarao</forename><surname>Kambhampati</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2402.08115</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+	<note type="raw_reference">Kaya Stechly, Karthik Valmeekam, and Subbarao Kamb- hampati. 2024. On the self-verification limitations of large language models on reasoning and planning tasks. Preprint, arXiv:2402.08115.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,381.24,219.51,8.64;5,317.05,392.20,209.10,8.64;5,317.05,403.16,207.36,8.64;5,316.69,413.93,207.71,8.82;5,316.74,424.89,209.39,8.59" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coords="5,345.44,403.16,178.97,8.64;5,316.69,414.11,84.34,8.64">Large language models are better reasoners with self-verification</title>
+		<author>
+			<persName coords=""><forename type="first">Yixuan</forename><surname>Weng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Minjun</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Fei</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shizhu</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shengping</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bin</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jun</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coords="5,422.46,413.93,101.94,8.59;5,316.74,424.89,205.22,8.59">The 2023 Conference on Empirical Methods in Natural Language Processing</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yixuan Weng, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Shengping Liu, Bin Sun, Kang Liu, and Jun Zhao. 2023. Large language models are better reasoners with self-verification. In The 2023 Conference on Empirical Methods in Natural Language Processing.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,449.49,219.51,8.64;5,317.05,460.45,208.74,8.64;5,316.69,471.41,207.72,8.64;5,317.05,482.19,207.36,8.82;5,317.05,493.15,110.05,8.59" xml:id="b13">
+	<monogr>
+		<title level="m" type="main" coords="5,429.28,460.45,96.52,8.64;5,316.69,471.41,207.72,8.64;5,317.05,482.37,174.17,8.64">Inference scaling laws: An empirical analysis of compute-optimal inference for problem-solving with language models</title>
+		<author>
+			<persName coords=""><forename type="first">Yangzhen</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhiqing</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shanda</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sean</forename><surname>Welleck</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yiming</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2408.00724</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Yangzhen Wu, Zhiqing Sun, Shanda Li, Sean Welleck, and Yiming Yang. 2024. Inference scaling laws: An empirical analysis of compute-optimal inference for problem-solving with language models. arXiv preprint arXiv:2408.00724.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,517.75,218.27,8.64;5,317.05,528.71,207.36,8.64;5,317.05,539.67,207.36,8.64;5,317.05,550.45,208.60,8.82;5,317.05,561.58,75.02,8.64" xml:id="b14">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Di</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaoshui</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dongzhan</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuqiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wanli</forename><surname>Ouyang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2406.07394</idno>
+		<title level="m" coords="5,456.31,528.71,68.10,8.64;5,317.05,539.67,207.36,8.64;5,317.05,550.62,157.38,8.64">Accessing gpt-4 level mathematical olympiad solutions via monte carlo tree self-refine with llama-3 8b</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+	<note type="raw_reference">Di Zhang, Xiaoshui Huang, Dongzhan Zhou, Yuqiang Li, and Wanli Ouyang. 2024. Accessing gpt-4 level mathematical olympiad solutions via monte carlo tree self-refine with llama-3 8b. Preprint, arXiv:2406.07394.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,586.00,218.27,8.64;5,317.05,596.96,208.60,8.64;5,317.05,607.92,209.10,8.64;5,316.86,618.88,207.55,8.64;5,317.05,629.66,207.35,8.82;5,316.80,640.62,106.54,8.82" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coords="5,316.86,618.88,207.55,8.64;5,317.05,629.84,20.45,8.64">Judging llm-as-a-judge with mt-bench and chatbot arena</title>
+		<author>
+			<persName coords=""><forename type="first">Lianmin</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wei-Lin</forename><surname>Chiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ying</forename><surname>Sheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Siyuan</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhanghao</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yonghao</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zi</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhuohan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dacheng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Eric</forename><surname>Xing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="5,345.66,629.66,178.75,8.59;5,316.80,640.62,29.78,8.59">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="46595" to="46623"/>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric Xing, et al. 2023. Judging llm-as-a-judge with mt-bench and chatbot arena. Advances in Neural Information Processing Systems, 36:46595-46623.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,665.22,218.27,8.64;5,317.05,676.18,209.01,8.64;5,317.05,687.13,207.36,8.64;5,317.05,697.91,166.76,8.82" xml:id="b16">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Zhi</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhuoliang</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhenkun</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bryan</forename><surname>Hooi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.08603</idno>
+		<title level="m" coords="5,373.89,676.18,152.17,8.64;5,317.05,687.13,207.36,8.64;5,317.05,698.09,24.43,8.64">Monte carlo tree search for comprehensive exploration in llm-based automatic heuristic design</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Zhi Zheng, Zhuoliang Xie, Zhenkun Wang, and Bryan Hooi. 2025. Monte carlo tree search for compre- hensive exploration in llm-based automatic heuristic design. arXiv preprint arXiv:2501.08603.</note>
+</biblStruct>
+
+<biblStruct coords="5,306.14,722.51,219.52,8.64;5,317.05,733.47,209.01,8.64;5,317.05,744.43,209.01,8.64;5,317.05,755.21,208.60,8.82;5,317.05,766.35,75.02,8.64" xml:id="b17">
+	<monogr>
+		<title level="m" type="main" coords="5,506.87,733.47,19.19,8.64;5,317.05,744.43,209.01,8.64;5,317.05,755.39,157.51,8.64">Language agent tree search unifies reasoning acting and planning in language models</title>
+		<author>
+			<persName coords=""><forename type="first">Andy</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kai</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michal</forename><surname>Shlapentokh-Rothman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Haohan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yu-Xiong</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2310.04406</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+	<note type="raw_reference">Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, and Yu-Xiong Wang. 2023. Lan- guage agent tree search unifies reasoning act- ing and planning in language models. Preprint, arXiv:2310.04406.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
